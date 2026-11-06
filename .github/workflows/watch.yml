@@ -1,0 +1,61 @@
+name: Watch for breaking AI news
+
+# Every 10 minutes (GitHub may start scheduled runs a few minutes late). Public repository, so the
+# minutes are free. The Slack token is a repository secret; nothing secret is in the code.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # The alarms already sent, kept as one commit on the "state" branch.
+      - name: Load state
+        run: |
+          if git fetch -q origin state 2>/dev/null; then git show origin/state:state.json > state.json; else echo '{"alarms": []}' > state.json; fi
+
+      - name: Watch
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL }}
+        run: |
+          set -o pipefail
+          python watcher.py --state state.json | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # Rewritten as a single commit every run; the push also keeps the schedule from being switched off
+      # for inactivity.
+      - name: Save state
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/state"; mkdir -p "$dir"; cp state.json "$dir/"
+          cd "$dir"
+          git init -q -b state
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git commit -q -m "State $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:state && break
+            [ "$attempt" = 3 ] && exit 1
+            sleep 10
+          done

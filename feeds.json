@@ -1,0 +1,663 @@
+{
+ "note": "Public RSS feeds the AI news scanner reads (sitemap sources and email newsletters are left out). Copied from the scanner's config on 6 Nov 2026.",
+ "feeds": [
+  {
+   "id": "tldr-ai",
+   "name": "TLDR AI",
+   "url": "https://tldr.tech/api/rss/ai",
+   "group": "ai-newsletter"
+  },
+  {
+   "id": "tldr-tech",
+   "name": "TLDR",
+   "url": "https://tldr.tech/api/rss/tech",
+   "group": "ai-newsletter",
+   "ai_filter": true
+  },
+  {
+   "id": "the-rundown-ai",
+   "name": "The Rundown AI",
+   "url": "https://www.therundown.ai/feed",
+   "group": "ai-newsletter"
+  },
+  {
+   "id": "the-neuron",
+   "name": "The Neuron",
+   "url": "https://rss.beehiiv.com/feeds/N4eCstxvgX.xml",
+   "group": "ai-newsletter"
+  },
+  {
+   "id": "latent-space",
+   "name": "Latent Space / AINews",
+   "url": "https://www.latent.space/feed",
+   "group": "ai-newsletter"
+  },
+  {
+   "id": "interconnects",
+   "name": "Interconnects",
+   "url": "https://www.interconnects.ai/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "simon-willison",
+   "name": "Simon Willison",
+   "url": "https://simonwillison.net/atom/everything/",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "understanding-ai",
+   "name": "Understanding AI",
+   "url": "https://www.understandingai.org/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "ahead-of-ai",
+   "name": "Ahead of AI",
+   "url": "https://magazine.sebastianraschka.com/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "one-useful-thing",
+   "name": "One Useful Thing",
+   "url": "https://www.oneusefulthing.org/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "politico-eu-tech",
+   "name": "POLITICO Europe (Technology)",
+   "url": "https://www.politico.eu/section/technology/feed/",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "algorithmwatch",
+   "name": "AlgorithmWatch",
+   "url": "https://algorithmwatch.org/en/feed/",
+   "group": "eu-ai-policy"
+  },
+  {
+   "id": "euronews-next",
+   "name": "Euronews Next",
+   "url": "https://www.euronews.com/rss?level=vertical&name=next",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "edri",
+   "name": "EDRi",
+   "url": "https://edri.org/feed/",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "the-next-web",
+   "name": "The Next Web",
+   "url": "https://thenextweb.com/feed",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "siliconrepublic",
+   "name": "Silicon Republic",
+   "url": "https://www.siliconrepublic.com/feed",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "ec-digital-strategy",
+   "name": "European Commission - Digital Strategy",
+   "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+   "group": "eu-institution",
+   "ai_filter": true
+  },
+  {
+   "id": "europarl-imco",
+   "name": "European Parliament - IMCO Committee",
+   "url": "https://www.europarl.europa.eu/rss/committee/imco/en.xml",
+   "group": "eu-institution",
+   "ai_filter": true
+  },
+  {
+   "id": "europarl-libe",
+   "name": "European Parliament - LIBE Committee",
+   "url": "https://www.europarl.europa.eu/rss/committee/libe/en.xml",
+   "group": "eu-institution",
+   "ai_filter": true
+  },
+  {
+   "id": "europarl-itre",
+   "name": "European Parliament - ITRE Committee",
+   "url": "https://www.europarl.europa.eu/rss/committee/itre/en.xml",
+   "group": "eu-institution",
+   "ai_filter": true
+  },
+  {
+   "id": "uk-aisi",
+   "name": "UK AI Security Institute",
+   "url": "https://www.gov.uk/government/organisations/ai-security-institute.atom",
+   "group": "eu-institution"
+  },
+  {
+   "id": "google-deepmind",
+   "name": "Google DeepMind",
+   "url": "https://deepmind.google/blog/rss.xml",
+   "group": "lab"
+  },
+  {
+   "id": "google-ai",
+   "name": "Google AI blog",
+   "url": "https://blog.google/technology/ai/rss/",
+   "group": "lab"
+  },
+  {
+   "id": "mistral",
+   "name": "Mistral AI",
+   "url": "https://mistral.ai/rss.xml",
+   "group": "lab"
+  },
+  {
+   "id": "microsoft-source",
+   "name": "Microsoft Source",
+   "url": "https://news.microsoft.com/source/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "hugging-face",
+   "name": "Hugging Face blog",
+   "url": "https://huggingface.co/blog/feed.xml",
+   "group": "lab"
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA blog",
+   "url": "https://blogs.nvidia.com/feed/",
+   "group": "lab"
+  },
+  {
+   "id": "techcrunch-ai",
+   "name": "TechCrunch",
+   "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "ars-technica-ai",
+   "name": "Ars Technica",
+   "url": "https://arstechnica.com/ai/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "the-decoder",
+   "name": "The Decoder",
+   "url": "https://the-decoder.com/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "wired-ai",
+   "name": "WIRED",
+   "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+   "group": "newsroom"
+  },
+  {
+   "id": "ieee-spectrum-ai",
+   "name": "IEEE Spectrum",
+   "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss",
+   "group": "newsroom"
+  },
+  {
+   "id": "heise-ki",
+   "name": "heise online (KI)",
+   "url": "https://www.heise.de/thema/Kuenstliche-Intelligenz.xml",
+   "group": "newsroom"
+  },
+  {
+   "id": "tomshardware",
+   "name": "Tom's Hardware",
+   "url": "https://www.tomshardware.com/feeds/all",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-register-ai",
+   "name": "The Register (AI)",
+   "url": "https://www.theregister.com/software/ai_ml/headlines.atom",
+   "group": "newsroom"
+  },
+  {
+   "id": "zdnet-ai",
+   "name": "ZDNET (AI)",
+   "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
+   "group": "newsroom"
+  },
+  {
+   "id": "guardian-ai",
+   "name": "The Guardian (AI)",
+   "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
+   "group": "newsroom"
+  },
+  {
+   "id": "bbc-technology",
+   "name": "BBC News (Technology)",
+   "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "cnbc-technology",
+   "name": "CNBC (Technology)",
+   "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "engadget",
+   "name": "Engadget",
+   "url": "https://www.engadget.com/rss.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "siliconangle-ai",
+   "name": "SiliconANGLE (AI)",
+   "url": "https://siliconangle.com/category/ai/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "ai-business",
+   "name": "AI Business",
+   "url": "https://aibusiness.com/rss.xml",
+   "group": "newsroom"
+  },
+  {
+   "id": "computerworld",
+   "name": "Computerworld",
+   "url": "https://www.computerworld.com/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "infoworld",
+   "name": "InfoWorld",
+   "url": "https://www.infoworld.com/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "techradar",
+   "name": "TechRadar",
+   "url": "https://www.techradar.com/rss",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-record",
+   "name": "The Record",
+   "url": "https://therecord.media/feed",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "techxplore-ai",
+   "name": "Tech Xplore (AI)",
+   "url": "https://techxplore.com/rss-feed/machine-learning-ai-news/",
+   "group": "newsroom"
+  },
+  {
+   "id": "sciencedaily-ai",
+   "name": "ScienceDaily (AI)",
+   "url": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+   "group": "newsroom"
+  },
+  {
+   "id": "quanta",
+   "name": "Quanta Magazine",
+   "url": "https://www.quantamagazine.org/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "crunchbase-news-ai",
+   "name": "Crunchbase News (AI)",
+   "url": "https://news.crunchbase.com/sections/ai/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "datacenterdynamics",
+   "name": "Data Center Dynamics",
+   "url": "https://www.datacenterdynamics.com/en/rss/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-robot-report",
+   "name": "The Robot Report",
+   "url": "https://www.therobotreport.com/feed/",
+   "group": "newsroom"
+  },
+  {
+   "id": "ieee-spectrum-robotics",
+   "name": "IEEE Spectrum (Robotics)",
+   "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+   "group": "newsroom"
+  },
+  {
+   "id": "npr-technology",
+   "name": "NPR (Technology)",
+   "url": "https://feeds.npr.org/1019/rss.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "abc-news-technology",
+   "name": "ABC News (Technology)",
+   "url": "https://abcnews.go.com/abcnews/technologyheadlines",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-markup",
+   "name": "The Markup",
+   "url": "https://themarkup.org/feeds/rss.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "mit-news-ai",
+   "name": "MIT News (AI)",
+   "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+   "group": "newsroom"
+  },
+  {
+   "id": "dw-english",
+   "name": "DW (English)",
+   "url": "https://rss.dw.com/rdf/rss-en-all",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-next-platform",
+   "name": "The Next Platform",
+   "url": "https://www.nextplatform.com/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "eenews-europe",
+   "name": "eeNews Europe",
+   "url": "https://www.eenewseurope.com/en/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "itpro",
+   "name": "ITPro",
+   "url": "https://www.itpro.com/feeds.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-stack",
+   "name": "The Stack",
+   "url": "https://www.thestack.technology/rss/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "tech-monitor",
+   "name": "Tech Monitor",
+   "url": "https://www.techmonitor.ai/feed",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "tech-funding-news",
+   "name": "Tech Funding News",
+   "url": "https://techfundingnews.com/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "golem",
+   "name": "Golem.de",
+   "url": "https://rss.golem.de/rss.php?feed=RSS2.0",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "netzpolitik",
+   "name": "netzpolitik.org",
+   "url": "https://netzpolitik.org/feed/",
+   "group": "eu-ai-policy",
+   "ai_filter": true
+  },
+  {
+   "id": "google-research",
+   "name": "Google Research",
+   "url": "https://research.google/blog/rss/",
+   "group": "lab"
+  },
+  {
+   "id": "microsoft-research",
+   "name": "Microsoft Research",
+   "url": "https://www.microsoft.com/en-us/research/feed/",
+   "group": "lab"
+  },
+  {
+   "id": "amazon-science",
+   "name": "Amazon Science",
+   "url": "https://www.amazon.science/index.rss",
+   "group": "lab"
+  },
+  {
+   "id": "apple-ml",
+   "name": "Apple Machine Learning Research",
+   "url": "https://machinelearning.apple.com/rss.xml",
+   "group": "lab"
+  },
+  {
+   "id": "meta-newsroom",
+   "name": "Meta Newsroom",
+   "url": "https://about.fb.com/news/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "meta-engineering",
+   "name": "Engineering at Meta",
+   "url": "https://engineering.fb.com/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "github-blog-ai",
+   "name": "The GitHub Blog (AI)",
+   "url": "https://github.blog/ai-and-ml/feed/",
+   "group": "lab"
+  },
+  {
+   "id": "cloudflare-blog",
+   "name": "Cloudflare Blog",
+   "url": "https://blog.cloudflare.com/rss/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "uk-dsit",
+   "name": "UK Department for Science, Innovation and Technology",
+   "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology.atom",
+   "group": "institution",
+   "ai_filter": true
+  },
+  {
+   "id": "uk-cma",
+   "name": "UK Competition and Markets Authority",
+   "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
+   "group": "institution",
+   "ai_filter": true
+  },
+  {
+   "id": "nist",
+   "name": "NIST (news)",
+   "url": "https://www.nist.gov/news-events/news/rss.xml",
+   "group": "institution",
+   "ai_filter": true
+  },
+  {
+   "id": "ai-snake-oil",
+   "name": "AI Snake Oil",
+   "url": "https://www.aisnakeoil.com/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "hyperdimensional",
+   "name": "Hyperdimensional",
+   "url": "https://www.hyperdimensional.co/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "luizas-newsletter",
+   "name": "Luiza's Newsletter",
+   "url": "https://www.luizasnewsletter.com/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "chinatalk",
+   "name": "ChinaTalk",
+   "url": "https://www.chinatalk.media/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "ai-policy-perspectives",
+   "name": "AI Policy Perspectives",
+   "url": "https://www.aipolicyperspectives.com/feed",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "ai2",
+   "name": "Ai2",
+   "url": "https://allenai.org/rss.xml",
+   "group": "lab"
+  },
+  {
+   "id": "edpb",
+   "name": "European Data Protection Board",
+   "url": "https://www.edpb.europa.eu/rss.xml",
+   "group": "eu-institution",
+   "ai_filter": true
+  },
+  {
+   "id": "azure-blog",
+   "name": "Microsoft Azure Blog",
+   "url": "https://azure.microsoft.com/en-us/blog/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "aws-news",
+   "name": "AWS News Blog",
+   "url": "https://aws.amazon.com/blogs/aws/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "salesforce-news",
+   "name": "Salesforce Newsroom",
+   "url": "https://www.salesforce.com/news/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "elevenlabs",
+   "name": "ElevenLabs",
+   "url": "https://elevenlabs.io/blog/rss.xml",
+   "group": "lab"
+  },
+  {
+   "id": "cset",
+   "name": "CSET (Georgetown)",
+   "url": "https://cset.georgetown.edu/feed/",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "france24",
+   "name": "France 24 (English)",
+   "url": "https://www.france24.com/en/rss",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "rfi-english",
+   "name": "RFI (English)",
+   "url": "https://www.rfi.fr/en/rss",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "new-atlas",
+   "name": "New Atlas",
+   "url": "https://newatlas.com/index.rss",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "the-conversation-ai",
+   "name": "The Conversation (AI)",
+   "url": "https://theconversation.com/europe/topics/artificial-intelligence-90/articles.atom",
+   "group": "ai-analysis"
+  },
+  {
+   "id": "404-media",
+   "name": "404 Media",
+   "url": "https://www.404media.co/rss/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "semiengineering",
+   "name": "Semiconductor Engineering",
+   "url": "https://semiengineering.com/feed/",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "t3n",
+   "name": "t3n",
+   "url": "https://t3n.de/rss.xml",
+   "group": "newsroom",
+   "ai_filter": true
+  },
+  {
+   "id": "microsoft-on-the-issues",
+   "name": "Microsoft On the Issues",
+   "url": "https://blogs.microsoft.com/on-the-issues/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "nvidia-newsroom",
+   "name": "NVIDIA Newsroom",
+   "url": "https://nvidianews.nvidia.com/releases.xml",
+   "group": "lab"
+  },
+  {
+   "id": "sap-news",
+   "name": "SAP News Center",
+   "url": "https://news.sap.com/feed/",
+   "group": "lab",
+   "ai_filter": true
+  },
+  {
+   "id": "cnil",
+   "name": "CNIL",
+   "url": "https://www.cnil.fr/fr/rss.xml",
+   "group": "institution",
+   "ai_filter": true
+  },
+  {
+   "id": "nature-ml",
+   "name": "Nature (machine learning)",
+   "url": "https://www.nature.com/subjects/machine-learning.rss",
+   "group": "newsroom"
+  }
+ ]
+}
