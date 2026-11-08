@@ -61,8 +61,12 @@ jobs:
           done
 
       # New candidates: start the Haiku judge (Claude routine "Breaking judge", fired by this event).
+      # The judge routine's private webhook address (repository secret JUDGE_HOOK_URL, made on the routine's
+      # page in the Claude app) starts it. Nobody else knows the address, so nobody else can start it.
       - name: Ask the judge
         if: hashFiles('judge.flag') != ''
         env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api "repos/${GITHUB_REPOSITORY}/dispatches" -f event_type=judge
+          HOOK: ${{ secrets.JUDGE_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "JUDGE_HOOK_URL is not set: candidates wait."; exit 0; fi
+          curl -sS -X POST -H "content-type: application/json" -d "{\"candidates\": \"$(cat judge.flag)\"}" "$HOOK" -o /dev/null -w "judge hook: %{http_code}\n"
