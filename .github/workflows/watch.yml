@@ -59,3 +59,10 @@ jobs:
             [ "$attempt" = 3 ] && exit 1
             sleep 10
           done
+
+      # New candidates: start the Haiku judge (Claude routine "Breaking judge", fired by this event).
+      - name: Ask the judge
+        if: hashFiles('judge.flag') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/${GITHUB_REPOSITORY}/dispatches" -f event_type=judge

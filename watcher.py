@@ -47,10 +47,11 @@ AI_TERMS = re.compile(
     re.IGNORECASE,
 )
 RULE_WORDS = re.compile(
-    r"\b(ruling|rules|fine[sd]?|ban(s|ned)?|investigat\w*|probe|proposal|propos\w*|regulation|act|law|decision|"
-    r"sanction\w*|export control\w*|guidance|guidelines|enforcement|infringement|complaint|consultation|code of practice)\b",
+    r"\b(ruling|fine[sd]?|ban(s|ned)?|investigat\w*|probe|decision|sanction\w*|export control\w*|enforcement|infringement)\b",
     re.IGNORECASE,
 )
+# For the authority rule a bare "agents" (travel agents) is not AI.
+STRICT_AI = re.compile(AI_TERMS.pattern.replace(r"\bagents?\b|", ""), re.IGNORECASE)
 STOP = set("the a an and or of to in on for with by from at as is are was were be its it this that their his her into over after "
            "about than new says said will can could may more most how why what who amid via has have had not but just now "
            "report reports reportedly".split())
@@ -255,7 +256,7 @@ def main() -> None:
         if len(outlets_of(members)) >= MIN_SOURCES:
             candidates.append(("sources", members))
     for x in recent_ai:
-        if x["group"] in AUTHORITIES and RULE_WORDS.search(x["title"]):
+        if x["group"] in AUTHORITIES and RULE_WORDS.search(x["title"]) and STRICT_AI.search(x["title"]):
             candidates.append(("authority", [x]))
 
     today = [a for a in state["alarms"] if datetime.fromisoformat(a["at"]) > now - timedelta(hours=24)]
@@ -268,14 +269,19 @@ def main() -> None:
             print(f"Daily limit reached; not sent: {members[0]['title']}")
             continue
         text, blocks = alarm_blocks(kind, members, now)
-        posted = False if args.dry_run else post(text, blocks)
-        print(("SENT " if posted else "WOULD SEND ") + text)
-        entry = {"at": now.isoformat(), "kind": kind, "title": members[0]["title"], "words": sorted(bag), "outlets": sorted(outlets_of(members).values())}
+        entry = {"id": f"c{int(now.timestamp())}{len(sent)}", "at": now.isoformat(), "kind": kind, "title": members[0]["title"],
+                 "words": sorted(bag), "outlets": sorted(outlets_of(members).values()),
+                 "lines": [f"{m['feed']}: {m['title']}" for m in members][:8], "text": text, "blocks": blocks}
+        print("TO JUDGE " + text.splitlines()[0])
         today.append(entry)
-        if posted:   # an alarm that did not reach Slack (no token yet) may fire on a later run
-            state["alarms"].append(entry)
+        if not args.dry_run:
+            state["alarms"].append({k: entry[k] for k in ("id", "at", "kind", "title", "words", "outlets")})
+            state.setdefault("pending", []).append(entry)
         sent.append(entry)
 
+    state["pending"] = [p for p in state.get("pending", []) if datetime.fromisoformat(p["at"]) > now - timedelta(days=2)]
+    if sent and not args.dry_run:
+        (ROOT / "judge.flag").write_text(" ".join(e["id"] for e in sent), encoding="utf-8")
     state["last_run"] = {"at": now.isoformat(), "feeds": len(feeds), "failed": failed, "items_24h": len(day),
                          "ai_items_window": len(recent_ai), "candidates": len(candidates), "alarms": len(sent)}
     if not args.dry_run:

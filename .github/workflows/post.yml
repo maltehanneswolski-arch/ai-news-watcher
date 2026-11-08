@@ -1,0 +1,31 @@
+name: Post judged alarms
+
+# The Haiku judge (a Claude routine) pushes its verdicts to the "verdicts" branch; this posts the
+# candidates it called important.
+on:
+  push:
+    branches: [verdicts]
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Post
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL }}
+        run: |
+          git fetch -q origin state verdicts
+          git show origin/state:state.json > state.json
+          git show origin/verdicts:verdicts.json > verdicts.json
+          python post_verdicts.py state.json verdicts.json | tee -a "$GITHUB_STEP_SUMMARY"

@@ -1,2 +1,4 @@
 state.json
 __pycache__/
+judge.flag
+verdicts.json
