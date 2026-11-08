@@ -67,6 +67,8 @@ jobs:
         if: hashFiles('judge.flag') != ''
         env:
           HOOK: ${{ secrets.JUDGE_HOOK_URL }}
+          TOKEN: ${{ secrets.JUDGE_HOOK_TOKEN }}
         run: |
-          if [ -z "$HOOK" ]; then echo "JUDGE_HOOK_URL is not set: candidates wait."; exit 0; fi
-          curl -sS -X POST -H "content-type: application/json" -d "{\"candidates\": \"$(cat judge.flag)\"}" "$HOOK" -o /dev/null -w "judge hook: %{http_code}\n"
+          if [ -z "$HOOK" ] || [ -z "$TOKEN" ]; then echo "JUDGE_HOOK_URL or JUDGE_HOOK_TOKEN is not set: candidates wait."; exit 0; fi
+          curl -sS -X POST -H "Authorization: Bearer $TOKEN" -H "anthropic-version: 2023-06-01" -H "content-type: application/json" \
+            -d "{\"text\": \"New candidates: $(cat judge.flag)\"}" "$HOOK" -o /dev/null -w "judge hook: %{http_code}\n"
