@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: "*/10 * * * *"
   workflow_dispatch:
+    inputs:
+      test_judge:
+        description: "Fire the judge once even without candidates"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -63,6 +68,10 @@ jobs:
       # New candidates: start the Haiku judge (Claude routine "Breaking judge", fired by this event).
       # The judge routine's private webhook address (repository secret JUDGE_HOOK_URL, made on the routine's
       # page in the Claude app) starts it. Nobody else knows the address, so nobody else can start it.
+      - name: Test flag
+        if: inputs.test_judge
+        run: '[ -f judge.flag ] || echo test > judge.flag'
+
       - name: Ask the judge
         if: hashFiles('judge.flag') != ''
         env:
