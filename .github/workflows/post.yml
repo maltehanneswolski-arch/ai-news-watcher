@@ -1,13 +1,17 @@
 name: Post judged alarms
 
-# The Haiku judge (a Claude routine) pushes its verdicts to the "verdicts" branch; this posts the
-# candidates it called important.
+# The Haiku judge (a Claude routine) pushes one file per verdict to the "verdicts" branch; this posts the
+# important ones among the files that push added. Files changed later are not posted again.
 on:
   push:
     branches: [verdicts]
 
 permissions:
   contents: read
+
+concurrency:
+  group: post
+  cancel-in-progress: false
 
 jobs:
   post:
@@ -24,8 +28,18 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
         run: |
-          git fetch -q origin state verdicts
+          set -euo pipefail
+          git fetch -q --depth=50 origin state verdicts
           git show origin/state:state.json > state.json
-          git show origin/verdicts:verdicts.json > verdicts.json
-          python post_verdicts.py state.json verdicts.json | tee -a "$GITHUB_STEP_SUMMARY"
+          if git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            files=$(git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" -- verdicts/)
+          else
+            files=$(git ls-tree --name-only "$AFTER" verdicts/)
+          fi
+          mkdir -p new
+          for f in $files; do git show "$AFTER:$f" > "new/$(basename "$f")"; done
+          if [ -z "$files" ]; then echo "No new verdicts."; exit 0; fi
+          python post_verdicts.py state.json new/*.json | tee -a "$GITHUB_STEP_SUMMARY"

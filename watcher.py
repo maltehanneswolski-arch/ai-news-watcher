@@ -30,7 +30,6 @@ import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
 USER_AGENT = "Mozilla/5.0 (compatible; AINewsScanner/1.0; +https://github.com/maltehanneswolski-arch)"
@@ -104,6 +103,16 @@ def parse_date(raw: str) -> datetime | None:
     return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
 
 
+def fix_text(s: str) -> str:
+    """Undo UTF-8 read as Windows-1252 ("â€™" for "’"), which some feeds send."""
+    if "â€" in s or "Ã" in s:
+        try:
+            return s.encode("cp1252").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
+    return s
+
+
 def read_feed(feed: dict) -> list[dict]:
     request = urllib.request.Request(feed["url"], headers={
         "User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*;q=0.5",
@@ -114,7 +123,7 @@ def read_feed(feed: dict) -> list[dict]:
     for node in root.iter():
         if local(node.tag) not in ("item", "entry"):
             continue
-        title = re.sub(r"\s+", " ", child_text(node, "title"))
+        title = fix_text(re.sub(r"\s+", " ", child_text(node, "title")))
         link = child_link(node)
         when = parse_date(child_text(node, "pubdate") or child_text(node, "published") or child_text(node, "updated") or child_text(node, "date"))
         if title and link and when:
@@ -180,14 +189,6 @@ def outlets_of(members: list[dict]) -> dict[str, str]:
     return out
 
 
-def next_check(now: datetime) -> str:
-    local_now = now.astimezone(ZoneInfo("Europe/Brussels"))
-    for hour in (8, 11, 14, 17, 20):
-        if local_now.hour < hour:
-            return f"{hour}:00"
-    return "8:00 tomorrow"
-
-
 # ---- slack ------------------------------------------------------------------
 
 def post(text: str, blocks: list[dict]) -> bool:
@@ -208,23 +209,6 @@ def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def alarm_blocks(kind: str, members: list[dict], now: datetime) -> tuple[str, list[dict]]:
-    lead = next((m for m in members if m["group"] in COUNTING), members[0])
-    outlets = sorted(outlets_of(members).values())
-    if kind == "sources":
-        line = f"{len(outlets)} outlets in the last hour: {', '.join(outlets)}"
-    else:
-        line = f"{lead['feed']}, an authority, just published this"
-    others = [m for m in members if m is not lead][:4]
-    more = "\n".join(f"• <{m['link']}|{esc(m['title'][:110])}> · {esc(m['feed'])}" for m in others)
-    text = f"*Possibly breaking* · <{lead['link']}|{esc(lead['title'])}>\n{esc(line)}" + (f"\n{more}" if more else "")
-    blocks = [
-        {"type": "section", "block_id": f"brk-{abs(hash(lead['link'])) % 10**8}", "text": {"type": "mrkdwn", "text": text[:2900]}},
-        {"type": "context", "elements": [{"type": "mrkdwn", "text": f"Not yet checked by the editor · next news check {next_check(now)}"}]},
-    ]
-    return f"Possibly breaking: {lead['title']}"[:900], blocks
-
-
 # ---- run ----------------------------------------------------------------------
 
 def main() -> None:
@@ -239,7 +223,9 @@ def main() -> None:
     state_path = Path(args.state)
     raw = state_path.read_text(encoding="utf-8").strip() if state_path.exists() else ""
     state = json.loads(raw) if raw else {"alarms": []}
-    state["alarms"] = [a for a in state.get("alarms", []) if datetime.fromisoformat(a["at"]) > now - timedelta(days=2)]
+    week = now - timedelta(days=7)
+    state["alarms"] = [a for a in state.get("alarms", []) if datetime.fromisoformat(a["at"]) > week]
+    state["near"] = [a for a in state.get("near", []) if datetime.fromisoformat(a["at"]) > week]
 
     items, failed = read_all(feeds)
     day = [x for x in items if x["published"] > now - timedelta(hours=24)]
@@ -253,8 +239,14 @@ def main() -> None:
 
     candidates = []
     for members in clusters(recent_ai, df, rare):
-        if len(outlets_of(members)) >= MIN_SOURCES:
+        n = len(outlets_of(members))
+        if n >= MIN_SOURCES:
             candidates.append(("sources", members))
+        elif n == MIN_SOURCES - 1:  # near miss: one outlet short, kept a week to see how close it gets
+            bag = set().union(*(words_of(m["title"]) for m in members))
+            if not any(same_story(bag, set(a["words"])) for a in state["near"] + state["alarms"]):
+                state["near"].append({"at": now.isoformat(), "title": members[0]["title"], "words": sorted(bag),
+                                      "outlets": sorted(outlets_of(members).values())})
     for x in recent_ai:
         if x["group"] in AUTHORITIES and RULE_WORDS.search(x["title"]) and STRICT_AI.search(x["title"]):
             candidates.append(("authority", [x]))
@@ -268,18 +260,19 @@ def main() -> None:
         if len(today) >= MAX_PER_DAY:
             print(f"Daily limit reached; not sent: {members[0]['title']}")
             continue
-        text, blocks = alarm_blocks(kind, members, now)
-        entry = {"id": f"c{int(now.timestamp())}{len(sent)}", "at": now.isoformat(), "kind": kind, "title": members[0]["title"],
+        lead = next((m for m in members if m["group"] in COUNTING), members[0])
+        members = [lead] + [m for m in members if m is not lead]
+        entry = {"id": f"c{int(now.timestamp())}{len(sent)}", "at": now.isoformat(), "kind": kind, "title": lead["title"],
                  "words": sorted(bag), "outlets": sorted(outlets_of(members).values()),
-                 "lines": [f"{m['feed']}: {m['title']}" for m in members][:8], "text": text, "blocks": blocks}
-        print("TO JUDGE " + text.splitlines()[0])
+                 "articles": [{"feed": m["feed"], "title": m["title"], "link": m["link"]} for m in members][:8]}
+        print("TO JUDGE " + lead["title"])
         today.append(entry)
         if not args.dry_run:
-            state["alarms"].append({k: entry[k] for k in ("id", "at", "kind", "title", "words", "outlets")})
+            state["alarms"].append(entry)
             state.setdefault("pending", []).append(entry)
         sent.append(entry)
 
-    state["pending"] = [p for p in state.get("pending", []) if datetime.fromisoformat(p["at"]) > now - timedelta(days=2)]
+    state["pending"] = [p for p in state.get("pending", []) if datetime.fromisoformat(p["at"]) > now - timedelta(hours=6)]
     if sent and not args.dry_run:
         (ROOT / "judge.flag").write_text(" ".join(e["id"] for e in sent), encoding="utf-8")
     state["last_run"] = {"at": now.isoformat(), "feeds": len(feeds), "failed": failed, "items_24h": len(day),
