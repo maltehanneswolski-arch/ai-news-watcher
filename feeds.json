@@ -658,6 +658,18 @@
    "name": "Nature (machine learning)",
    "url": "https://www.nature.com/subjects/machine-learning.rss",
    "group": "newsroom"
+  },
+  {
+   "id": "bloomberg-tech",
+   "name": "Bloomberg (Technology)",
+   "url": "https://www.bloomberg.com/feeds/technology/news.rss",
+   "group": "newsroom"
+  },
+  {
+   "id": "politico-tech",
+   "name": "POLITICO (Technology)",
+   "url": "https://rss.politico.com/technology.xml",
+   "group": "newsroom"
   }
  ]
 }
