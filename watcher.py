@@ -51,6 +51,13 @@ RULE_WORDS = re.compile(
 )
 # For the authority rule a bare "agents" (travel agents) is not AI.
 STRICT_AI = re.compile(AI_TERMS.pattern.replace(r"\bagents?\b|", ""), re.IGNORECASE)
+# Outlets that count when they come through Google News (the wires and major newsrooms); any other
+# outlet there is read but does not count.
+GNEWS_OUTLETS = set("""reuters.com apnews.com bloomberg.com ft.com wsj.com nytimes.com washingtonpost.com economist.com
+    politico.com politico.eu axios.com semafor.com theinformation.com cnbc.com cnn.com nbcnews.com cbsnews.com npr.org
+    bbc.co.uk bbc.com theguardian.com theverge.com techcrunch.com wired.com arstechnica.com euractiv.com euronews.com
+    dw.com france24.com lemonde.fr handelsblatt.com spiegel.de faz.net sueddeutsche.de heise.de nikkei.com scmp.com
+    afp.com aljazeera.com""".split())
 STOP = set("the a an and or of to in on for with by from at as is are was were be its it this that their his her into over after "
            "about than new says said will can could may more most how why what who amid via has have had not but just now "
            "report reports reportedly".split())
@@ -126,9 +133,19 @@ def read_feed(feed: dict) -> list[dict]:
         title = fix_text(re.sub(r"\s+", " ", child_text(node, "title")))
         link = child_link(node)
         when = parse_date(child_text(node, "pubdate") or child_text(node, "published") or child_text(node, "updated") or child_text(node, "date"))
-        if title and link and when:
-            items.append({"feed": feed["name"], "group": feed.get("group", ""), "title": title, "link": link,
-                          "published": when.astimezone(timezone.utc)})
+        if not (title and link and when):
+            continue
+        item = {"feed": feed["name"], "group": feed.get("group", ""), "title": title, "link": link,
+                "published": when.astimezone(timezone.utc)}
+        src = next((c for c in node if local(c.tag) == "source" and c.get("url")), None)
+        if feed.get("kind") == "gnews" and src is not None:
+            # Google News: one item per outlet; the outlet is the <source>, the title ends in " - Outlet".
+            name = (src.text or "").strip()
+            item["title"] = re.sub(r"\s+-\s+" + re.escape(name) + r"$", "", title) if name else title
+            item["feed"] = f"{name} (via Google News)"
+            item["site"] = site(src.get("url"))
+            item["group"] = "newsroom" if item["site"] in GNEWS_OUTLETS else "aggregated"
+        items.append(item)
     return items
 
 
@@ -185,7 +202,7 @@ def outlets_of(members: list[dict]) -> dict[str, str]:
     out: dict[str, str] = {}
     for m in members:
         if m["group"] in COUNTING:
-            out.setdefault(site(m["link"]), m["feed"])
+            out.setdefault(m.get("site") or site(m["link"]), m["feed"])
     return out
 
 
@@ -228,6 +245,10 @@ def main() -> None:
     state["near"] = [a for a in state.get("near", []) if datetime.fromisoformat(a["at"]) > week]
 
     items, failed = read_all(feeds)
+    # The Google News searches overlap: keep one copy of each outlet's headline.
+    seen: set[tuple[str, str]] = set()
+    items = [x for x in items if not ((x.get("site") or x["link"]), x["title"].lower()) in seen
+             and not seen.add(((x.get("site") or x["link"]), x["title"].lower()))]
     day = [x for x in items if x["published"] > now - timedelta(hours=24)]
     df: dict[str, int] = {}
     for x in day:

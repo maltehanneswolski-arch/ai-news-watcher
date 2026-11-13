@@ -670,6 +670,27 @@
    "name": "POLITICO (Technology)",
    "url": "https://rss.politico.com/technology.xml",
    "group": "newsroom"
+  },
+  {
+   "id": "gnews-ai",
+   "name": "Google News: ai",
+   "url": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q=%22artificial%20intelligence%22%20OR%20%22AI%22%20when%3A6h",
+   "group": "aggregated",
+   "kind": "gnews"
+  },
+  {
+   "id": "gnews-labs",
+   "name": "Google News: labs",
+   "url": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q=OpenAI%20OR%20Anthropic%20OR%20Nvidia%20OR%20DeepMind%20OR%20Gemini%20OR%20xAI%20OR%20Mistral%20OR%20%22Meta%20AI%22%20when%3A6h",
+   "group": "aggregated",
+   "kind": "gnews"
+  },
+  {
+   "id": "gnews-policy",
+   "name": "Google News: policy",
+   "url": "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q=%22AI%20Act%22%20OR%20%22AI%20regulation%22%20OR%20%22chip%20export%22%20OR%20semiconductor%20OR%20%22data%20center%22%20when%3A6h",
+   "group": "aggregated",
+   "kind": "gnews"
   }
  ]
 }
