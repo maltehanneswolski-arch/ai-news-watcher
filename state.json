@@ -1,0 +1,2409 @@
+{
+ "alarms": [
+  {
+   "id": "c17941734530",
+   "at": "2026-11-08T21:30:53.897112+00:00",
+   "kind": "sources",
+   "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+   "words": [
+    "alleged",
+    "bipartisan",
+    "ceo",
+    "china",
+    "chinese",
+    "congressional",
+    "face",
+    "foreign",
+    "huang",
+    "intelligence",
+    "investigate",
+    "investigation",
+    "jensen",
+    "link",
+    "nvidia",
+    "open",
+    "possible",
+    "relationship",
+    "reported",
+    "scrutiny",
+    "spy",
+    "target"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "TechCrunch",
+    "The Guardian (AI)"
+   ]
+  },
+  {
+   "id": "c17942598550",
+   "at": "2026-11-09T21:30:55.386068+00:00",
+   "kind": "sources",
+   "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
+   "words": [
+    "2",
+    "5",
+    "amodei",
+    "anthropic",
+    "before",
+    "build",
+    "buzz",
+    "call",
+    "cement",
+    "claude",
+    "concern",
+    "fable",
+    "first",
+    "frontier",
+    "ipo",
+    "lead",
+    "model",
+    "mytho",
+    "release",
+    "rsi",
+    "since",
+    "slowdown"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "TechCrunch",
+    "The Decoder"
+   ]
+  },
+  {
+   "id": "c17942703700",
+   "at": "2026-11-10T00:26:10.883576+00:00",
+   "kind": "sources",
+   "title": "Jensen Huang’s future raises questions for AI infrastructure industry",
+   "words": [
+    "affair",
+    "ceo",
+    "clear",
+    "future",
+    "huang",
+    "industry",
+    "infrastructure",
+    "jensen",
+    "leave",
+    "nvidia",
+    "puts",
+    "question",
+    "raise",
+    "reeling",
+    "renowned",
+    "risk",
+    "successor",
+    "trouble"
+   ],
+   "outlets": [
+    "AI Business",
+    "CNBC (Technology)",
+    "WIRED"
+   ]
+  },
+  {
+   "id": "c17942886560",
+   "at": "2026-11-10T05:30:56.839915+00:00",
+   "kind": "sources",
+   "title": "Australia to introduce mandatory reporting after OpenAI hack to combat artificial intelligence ‘going rogue’",
+   "words": [
+    "artificial",
+    "australia",
+    "combat",
+    "consider",
+    "criminal",
+    "going",
+    "hack",
+    "intelligence",
+    "introduce",
+    "mandatory",
+    "openai",
+    "penaltie",
+    "reporting",
+    "rogue",
+    "safeguard",
+    "wake"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "DW (English)",
+    "The Guardian (AI)"
+   ]
+  },
+  {
+   "id": "c17943012570",
+   "at": "2026-11-10T09:00:57.743963+00:00",
+   "kind": "sources",
+   "title": "Trump says FBI is looking at Nvidia CEO Jensen Huang's affair with alleged Chinese agent",
+   "words": [
+    "affair",
+    "agent",
+    "alleged",
+    "bei",
+    "boss",
+    "ceo",
+    "chinese",
+    "ermittelt",
+    "fbi",
+    "huang",
+    "investigating",
+    "jensen",
+    "looking",
+    "nvidia",
+    "spionageverdacht",
+    "spy",
+    "trump",
+    "zum"
+   ],
+   "outlets": [
+    "ABC News (Technology)",
+    "BBC News (Technology)",
+    "Golem.de"
+   ]
+  },
+  {
+   "id": "c17943201560",
+   "at": "2026-11-10T14:15:56.496508+00:00",
+   "kind": "sources",
+   "title": "Anthropic kicks off IPO roadshow, offering shares at $70 to $78 and targeting a trillion-dollar valuation",
+   "words": [
+    "1",
+    "3",
+    "404",
+    "70",
+    "78",
+    "anthropic",
+    "dollar",
+    "head",
+    "implied",
+    "ipo",
+    "kick",
+    "listing",
+    "major",
+    "market",
+    "off",
+    "offering",
+    "per",
+    "price",
+    "range",
+    "reach",
+    "roadshow",
+    "sets",
+    "share",
+    "stock",
+    "targeting",
+    "trillion",
+    "valuation"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "TechCrunch",
+    "The Decoder"
+   ],
+   "articles": [
+    {
+     "feed": "The Decoder",
+     "title": "Anthropic kicks off IPO roadshow, offering shares at $70 to $78 and targeting a trillion-dollar valuation",
+     "link": "https://the-decoder.com/anthropic-kicks-off-ipo-roadshow-offering-shares-at-70-to-78-and-targeting-a-trillion-dollar-valuation/"
+    },
+    {
+     "feed": "TechCrunch",
+     "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+     "link": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    },
+    {
+     "feed": "BBC News (Technology)",
+     "title": "Anthropic heads for $1.3 trillion valuation in major stock market listing",
+     "link": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss"
+    }
+   ]
+  },
+  {
+   "id": "c17943309570",
+   "at": "2026-11-10T17:15:57.591200+00:00",
+   "kind": "sources",
+   "title": "Google's Gemini 4 Carbon is now widely available around the world",
+   "words": [
+    "4",
+    "around",
+    "available",
+    "carbon",
+    "developer",
+    "gemini",
+    "google",
+    "open",
+    "paying",
+    "ultra",
+    "user",
+    "widely",
+    "world"
+   ],
+   "outlets": [
+    "Engadget",
+    "Google DeepMind",
+    "The Next Web"
+   ],
+   "articles": [
+    {
+     "feed": "Engadget",
+     "title": "Google's Gemini 4 Carbon is now widely available around the world",
+     "link": "https://www.engadget.com/2311855/gemini-4-carbon-now-available-worldwide/"
+    },
+    {
+     "feed": "Google DeepMind",
+     "title": "Gemini 4 Carbon is now available",
+     "link": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
+    {
+     "feed": "The Next Web",
+     "title": "Google’s Gemini 4 Carbon is now open to paying developers and Ultra users",
+     "link": "https://thenextweb.com/news/google-gemini-4-carbon-available-developers-ultra"
+    }
+   ]
+  },
+  {
+   "id": "c17943471550",
+   "at": "2026-11-10T21:45:55.450288+00:00",
+   "kind": "sources",
+   "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
+   "words": [
+    "affair",
+    "board",
+    "firm",
+    "hire",
+    "huang",
+    "investigate",
+    "investigation",
+    "jensen",
+    "joon",
+    "kim",
+    "law",
+    "lead",
+    "lipton",
+    "major",
+    "nvidia",
+    "probe",
+    "prosecutor",
+    "wachtell",
+    "york"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "CNBC (Technology)",
+    "POLITICO Europe (Technology)",
+    "The Next Web"
+   ],
+   "articles": [
+    {
+     "feed": "CNBC (Technology)",
+     "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
+     "link": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+    },
+    {
+     "feed": "The Next Web",
+     "title": "Nvidia board hires ex-prosecutor Joon Kim to investigate Jensen Huang",
+     "link": "https://thenextweb.com/news/nvidia-board-jensen-huang-inquiry-directors-succession"
+    },
+    {
+     "feed": "POLITICO Europe (Technology)",
+     "title": "Nvidia hires Wachtell Lipton for Jensen Huang investigation",
+     "link": "https://www.politico.eu/article/nvidia-hires-wachtell-lipton-for-jensen-huang-investigation/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication"
+    },
+    {
+     "feed": "BBC News (Technology)",
+     "title": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+     "link": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss"
+    }
+   ]
+  },
+  {
+   "id": "c17944398550",
+   "at": "2026-11-11T23:30:55.422146+00:00",
+   "kind": "sources",
+   "title": "Jensen Huang now accused of affair with Nvidia executive who reported to him, alleged cover-up attempt — new indiscretion comes in wake of admitted affair with alleged Chinese spy",
+   "words": [
+    "accused",
+    "admitted",
+    "affair",
+    "alleged",
+    "another",
+    "attempt",
+    "board",
+    "ceo",
+    "chinese",
+    "come",
+    "consider",
+    "cover",
+    "drop",
+    "exec",
+    "executive",
+    "having",
+    "him",
+    "huang",
+    "indiscretion",
+    "jensen",
+    "nvidia",
+    "oust",
+    "ouster",
+    "prep",
+    "reported",
+    "second",
+    "spy",
+    "staffer",
+    "stock",
+    "wake"
+   ],
+   "outlets": [
+    "Data Center Dynamics",
+    "TechCrunch",
+    "Tom's Hardware"
+   ],
+   "articles": [
+    {
+     "feed": "Tom's Hardware",
+     "title": "Jensen Huang now accused of affair with Nvidia executive who reported to him, alleged cover-up attempt — new indiscretion comes in wake of admitted affair with alleged Chinese spy",
+     "link": "https://www.tomshardware.com/tech-industry/jensen-huang-now-accused-of-affair-with-nvidia-executive-who-reported-to-him-alleged-cover-up-attempt-new-indiscretion-comes-in-wake-of-admitted-affair-with-alleged-chinese-spy"
+    },
+    {
+     "feed": "TechCrunch",
+     "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
+     "link": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/"
+    },
+    {
+     "feed": "Data Center Dynamics",
+     "title": "Nvidia's Jensen Huang accused of second affair with staffer, board considers ouster",
+     "link": "https://www.datacenterdynamics.com/en/news/nvidias-jensen-huang-accused-of-second-affair-with-staffer-board-considers-ouster/"
+    },
+    {
+     "feed": "TechCrunch",
+     "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+     "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/"
+    }
+   ]
+  },
+  {
+   "id": "c17944938550",
+   "at": "2026-11-12T14:30:55.836493+00:00",
+   "kind": "sources",
+   "title": "Nvidia CEO Jensen Huang resigns as scandal mounts over alleged affair with suspected Chinese spy",
+   "words": [
+    "1",
+    "4",
+    "affair",
+    "alleged",
+    "ceo",
+    "chinese",
+    "down",
+    "espionage",
+    "huang",
+    "jensen",
+    "market",
+    "mount",
+    "nvidia",
+    "out",
+    "resign",
+    "scandal",
+    "spy",
+    "step",
+    "suspected",
+    "trillion",
+    "value",
+    "wipe"
+   ],
+   "outlets": [
+    "DW (English)",
+    "NPR (Technology)",
+    "The Decoder"
+   ],
+   "articles": [
+    {
+     "feed": "DW (English)",
+     "title": "Nvidia CEO Jensen Huang resigns as scandal mounts over alleged affair with suspected Chinese spy",
+     "link": "https://www.dw.com/en/nvidia-ceo-jensen-huang-resigns-as-scandal-mounts-over-alleged-affair-with-suspected-chinese-spy/a-79931658?maca=en-rss-en-all-1573-rdf"
+    },
+    {
+     "feed": "The Decoder",
+     "title": "Jensen Huang resigns as Nvidia CEO after espionage scandal wipes out $1.4 trillion in market value",
+     "link": "https://the-decoder.com/jensen-huang-resigns-as-nvidia-ceo-after-espionage-scandal-wipes-out-1-4-trillion-in-market-value/"
+    },
+    {
+     "feed": "NPR (Technology)",
+     "title": "Nvidia CEO Jensen Huang steps down amid alleged spy scandal",
+     "link": "https://www.npr.org/2026/11/12/nx-s1-6037833/jensen-huang-nvidia-board-fired"
+    }
+   ]
+  },
+  {
+   "id": "c17944938551",
+   "at": "2026-11-12T14:30:55.836493+00:00",
+   "kind": "sources",
+   "title": "Außereheliche Affären: Nvidia-CEO Jensen Huang tritt mit sofortiger Wirkung ab",
+   "words": [
+    "aff",
+    "ceo",
+    "chef",
+    "ereheliche",
+    "huang",
+    "jensen",
+    "mit",
+    "nach",
+    "nvidia",
+    "ren",
+    "renskandalen",
+    "sofortiger",
+    "spionage",
+    "tritt",
+    "und",
+    "wegen",
+    "wirkung",
+    "zur"
+   ],
+   "outlets": [
+    "Golem.de",
+    "heise online (KI)",
+    "t3n"
+   ],
+   "articles": [
+    {
+     "feed": "heise online (KI)",
+     "title": "Außereheliche Affären: Nvidia-CEO Jensen Huang tritt mit sofortiger Wirkung ab",
+     "link": "https://www.heise.de/news/Nach-Bekanntwerden-einer-zweiten-Affaere-Nvidia-CEO-Jensen-Huang-abgetreten-11522193.html?wt_mc=rss.red.ho.themen.k%C3%BCnstliche+intelligenz.beitrag.beitrag"
+    },
+    {
+     "feed": "Golem.de",
+     "title": "Jensen Huang: Nvidia-Chef tritt wegen Spionage- und Affärenskandalen zurück",
+     "link": "https://www.golem.de/news/jensen-huang-nvidia-chef-tritt-wegen-spionage-und-affaerenskandalen-zurueck-2611-215142.html"
+    },
+    {
+     "feed": "t3n",
+     "title": "Nvidia-Chef Jensen Huang tritt nach Affären zurück",
+     "link": "https://t3n.de/news/nvidia-chef-jensen-huang-tritt-nach-affaeren-zurueck-1773333/?utm_source=rss&utm_medium=newsFeed&utm_campaign=newsFeed"
+    }
+   ]
+  },
+  {
+   "id": "c17945064550",
+   "at": "2026-11-12T18:00:55.958877+00:00",
+   "kind": "sources",
+   "title": "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
+   "words": [
+    "board",
+    "ceo",
+    "chair",
+    "chief",
+    "colette",
+    "employee",
+    "exit",
+    "finance",
+    "harvey",
+    "here",
+    "huang",
+    "interim",
+    "jensen",
+    "jone",
+    "kres",
+    "nvidia",
+    "out",
+    "permanently",
+    "replacement",
+    "step",
+    "take",
+    "wrote"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "CNBC (Technology)",
+    "TechCrunch"
+   ],
+   "articles": [
+    {
+     "feed": "BBC News (Technology)",
+     "title": "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
+     "link": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "feed": "TechCrunch",
+     "title": "Jensen Huang is out at Nvidia — who is Colette Kress, his interim replacement?",
+     "link": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/"
+    },
+    {
+     "feed": "CNBC (Technology)",
+     "title": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
+     "link": "https://www.cnbc.com/2026/11/12/nvidia-kress-jones-employee-emails.html"
+    },
+    {
+     "feed": "CNBC (Technology)",
+     "title": "Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit",
+     "link": "https://www.cnbc.com/2026/11/12/colette-kress-nvidia-cfo-interim-ceo-candidate.html"
+    }
+   ]
+  },
+  {
+   "id": "c17945118570",
+   "at": "2026-11-12T19:30:57.198052+00:00",
+   "kind": "sources",
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "words": [
+    "3",
+    "4",
+    "8",
+    "finally",
+    "flash",
+    "gemini",
+    "gets",
+    "google",
+    "hydrogen",
+    "introducing",
+    "major",
+    "out",
+    "replacing",
+    "roll",
+    "search",
+    "upgrade"
+   ],
+   "outlets": [
+    "Ars Technica",
+    "Google AI blog",
+    "Google DeepMind"
+   ],
+   "articles": [
+    {
+     "feed": "Google AI blog",
+     "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+     "link": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
+     "feed": "Google DeepMind",
+     "title": "Introducing Gemini 4 Hydrogen",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+    },
+    {
+     "feed": "Ars Technica",
+     "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+     "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"
+    }
+   ]
+  },
+  {
+   "id": "c17945820550",
+   "at": "2026-11-13T15:00:55.308198+00:00",
+   "kind": "sources",
+   "title": "Bloomberg details web of Chinese AI companies with smuggled NVIDIA chips linked to Alice Huang",
+   "words": [
+    "alice",
+    "banned",
+    "bloomberg",
+    "center",
+    "ceo",
+    "china",
+    "chinese",
+    "chip",
+    "companie",
+    "congres",
+    "curb",
+    "data",
+    "detail",
+    "document",
+    "firm",
+    "former",
+    "got",
+    "huang",
+    "jensen",
+    "linked",
+    "nvidia",
+    "procured",
+    "shanghai",
+    "smuggled",
+    "spy",
+    "suspected",
+    "testify",
+    "tie",
+    "ties",
+    "warn",
+    "web"
+   ],
+   "outlets": [
+    "Bloomberg.com (via Google News)",
+    "Engadget",
+    "Euronews Next"
+   ],
+   "articles": [
+    {
+     "feed": "Engadget",
+     "title": "Bloomberg details web of Chinese AI companies with smuggled NVIDIA chips linked to Alice Huang",
+     "link": "https://www.engadget.com/2315710/bloomberg-details-web-of-chinese-ai-companies-with-smuggled-nvidia-chips-linked-to-alice-huang/"
+    },
+    {
+     "feed": "Bloomberg.com (via Google News)",
+     "title": "Alice Huang-Linked Firm Procured Banned Nvidia Chips in China",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZGhfekJtSDUzVXhKZHNDNzgtTXc1RXBUVk9sR3JJX0ZtNDdmazBHU2ZvRXJEN25HMWpOTVdxWng1Y1VXa05OSGlwMmFGUllzMDgyRnkzWWxFdk5pLUhZd1BvUUNXS3NYYXg2TzdxSk9MSXowWWpGTG1CdUxka01oODhvVzBnNDN3Sk5uYWtybjVoelhGRVFWNk5MR2g1Ykx3cXVJazNUWE92ZElRbmVQYzEwaUxBc3lHRHdBVDJvVjA?oc=5"
+    },
+    {
+     "feed": "Quartz (via Google News)",
+     "title": "Documents tie banned Nvidia AI chips to Alice Huang-linked Shanghai data center",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE11Y1l5SjhhSG1heXMtQVdTeG5NS2Q3XzAtSGRicXhIYk9kclF3a3dlaHQ0Sm9UeDExOVJ4T0VDYXhhYkVTYnNUWTlQNFlYX2dsWWtPSUxiZXQ3NDJJWnhMOENBdFZWaWs5VEZ6dHlRSHVvS01PeGc?oc=5"
+    },
+    {
+     "feed": "Euronews Next",
+     "title": "China warns US over chip curbs as suspected spy’s firm got banned chips",
+     "link": "https://www.euronews.com/2026/11/13/china-warns-us-over-chip-curbs-as-suspected-spys-firm-got-banned-chips"
+    },
+    {
+     "feed": "13WHAM-TV (via Google News)",
+     "title": "Former Nvidia CEO Jensen Huang to testify to Congress over suspected Chinese spy ties",
+     "link": "https://news.google.com/rss/articles/CBMikwNBVV95cUxNd2REaHZ4NjhrM1MzemZOLXVnNkwzZHYzMjJSMEhSLUxBcGhzLTdlbko5eFVjclhDbUFiWUFJR0wzVkRoN0VCbXFvRGRFOXdSclNmNzdTSGVjWmRydVA3ZzRZSjNpTVNQam9FNVNpaDk2RE85N3BtcWZzd05IbFlsbkRaZktZajUtZEIzUVZsQnVIaUhEVndmdmxxWlZSXzZ4c21EZ0J1QTJ5LU92QU1sZzI5eFZMMmdqUG1HRjVGSjJpTUprQzJHMGRNODA0blVfT01EdWVYUFNPUGNDak4weDNuTG1oQ1NudGNWZm00YXlTZ3hlMDgteVhfTTVvcnNLYjEyYnJnWXdUbnRpRkpndEJYTElwUHg3d1pVSkVfTGVmZHBZZGQzMllHT1JRRUtVRW9VS003WEhuSWV1djhzdWJrZXdlTTYzd0N4aFBZQjFfNUQ4ZC1BNEhEaU4tSTFWOFQtbGdaTW11SzVwRjhuaTE1T3hGU3hsSXRmT3VPX3JHS1pXRzZtQ19uQ2g1QkV1LXk4?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "c17945838570",
+   "at": "2026-11-13T15:30:57.010715+00:00",
+   "kind": "sources",
+   "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+   "words": [
+    "5",
+    "additional",
+    "ahead",
+    "backed",
+    "ceo",
+    "debt",
+    "depart",
+    "financing",
+    "harder",
+    "hits",
+    "huang",
+    "ipo",
+    "jensen",
+    "lean",
+    "need",
+    "nscale",
+    "nvidia",
+    "planned"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "The Next Web",
+    "WSJ (via Google News)"
+   ],
+   "articles": [
+    {
+     "feed": "CNBC (via Google News)",
+     "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNmVPNWtoSGZwRHo4alI0Ql9LT1ZuN2ZmTFNDSkR0REg0M3FPYy1rLW05SGdCbHBOWV9FR0diZE1KVmVSUGFRNlZpN3BoNkRvWWJUa21WNE14bDBXTzJqWXY2T3B3YVFtRlJVdGM3SlBWTVB6ZHpleUlzT1hvUnpMYktobDJLUGNp0gGOAUFVX3lxTE10dDVweW9VX1NSdy1Md2JSWE5rbVRXOEo5N1FFVFVhaUJGakRfQ29scXdIOEh2QlJPQ29PcjhZN2JvNm1wWnlKdnpNRC1RQ1p3dG9rRjRvSHJQYkprODBoc2FhbDFlUFROS3Q1RkF0c3VReDJXY2Myd2pEa0VmRjlvYURzeFctaEQzWS10VGc?oc=5"
+    },
+    {
+     "feed": "WSJ (via Google News)",
+     "title": "Nvidia-Backed Nscale Says It Needs Additional Financing Ahead of Planned IPO",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcUZzU1JvX2lzdENhZ1BKSEZ4QUNuWk5qZWQ1WkZuX3JENDM5MWFUVmtlZ2l3anlNSzdIay11eGFzYzRzM254ZlZvcFk4Q3F6VVg3WGpubTByWGxfbEp6anpvaWl4WU9CWW9uVDZZdDhJMk5HM3pueTJSTDl0d0k4WGc5YkJlalM4MFZVYUc4ZzAzdms2cGx5SjdCNXZoWjFBY2lTbmIwcmRoNVlXZGU4?oc=5"
+    },
+    {
+     "feed": "The Next Web",
+     "title": "Nscale’s debt hits $5.5bn as it leans harder on Nvidia ahead of its IPO",
+     "link": "https://thenextweb.com/news/nscale-ipo-filing-debt-nvidia-anthropic"
+    }
+   ]
+  },
+  {
+   "id": "c17945847550",
+   "at": "2026-11-13T15:45:55.668457+00:00",
+   "kind": "sources",
+   "title": "Bessent blames Commerce for not restricting Nvidia customer’s chip exports",
+   "words": [
+    "agree",
+    "aide",
+    "banning",
+    "bessent",
+    "blame",
+    "china",
+    "chip",
+    "commerce",
+    "control",
+    "customer",
+    "department",
+    "dept",
+    "export",
+    "firm",
+    "him",
+    "lack",
+    "leak",
+    "leakage",
+    "linked",
+    "lot",
+    "lutnick",
+    "megaspeed",
+    "nvidia",
+    "partner",
+    "restricting",
+    "secretary",
+    "secy",
+    "slam",
+    "spy",
+    "system",
+    "testify",
+    "treasury",
+    "trump"
+   ],
+   "outlets": [
+    "CBS News (via Google News)",
+    "Le Monde.fr (via Google News)",
+    "Reuters (via Google News)",
+    "The Washington Post (via Google News)"
+   ],
+   "articles": [
+    {
+     "feed": "The Washington Post (via Google News)",
+     "title": "Bessent blames Commerce for not restricting Nvidia customer’s chip exports",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUGRWMi1MNTdhajFaclo1X3VPazhLeXlDa2ZadEdMOUtLV3BUbUhqTi0tWFQ4bzliekwtOHk5Y1gzaGlrdktFLUZnSEJKRFJHZ1Y1RHpjT1NQM0x1M2E0MklYZUlUWm5qdGpUYnFydjc2bF9IRmVFcERtczFScWU3djNVSXdUQ3VCdkZfSl84NkdVM0RTbWo3QnQtVmJ5cHFDblJNMzdRWnREd1dyLUVnUng5RjUwaF81VUVkcDQxMG1KWk80N1ZGZA?oc=5"
+    },
+    {
+     "feed": "The Times of India (via Google News)",
+     "title": "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
+     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNQ0lfZHNJZS1BazBkUWExbVViUG9wNzEzS0Q5UFpQMjBpcjdaYUdVYVZKdUx3bFZTYk94MTN3WWtETEhlZmxuM255VHlFa2FVd2RrTWdGWnRHblpteE9vUEV2cVlfVmZzajlocHYzaDBZbXN0MWIwZnpJcmZBZmc1aGpucnNXRnVuYjc3clRRLWlDVlUzeHF1QkdHcEJscmxrTVR5QzI4NlYzakVMWmVDa2ZYc0EtcWx0TU16aDNBdFN1THE3czloUlpmZlZhd05Gd2N0V3lGRHBZb0E5b0N3U2tNR2l3ZTBFTURnZzRzYmZKSHd6YnRMVXh2OVJ6VFU1ekRGUNIBigJBVV95cUxOQjdGR1Qzd1RiaWpFOGFDcmtocmpCbE5yRzNwbndBTl9wSDlHb1NnaHdtQ2FETHRrQUVwa2ZjdFpLTE5DczczN0tOSlF0SW5NZ1NQRE5FN0FFbkVYM0EzbmV5aE02S1A5VElKWE9vUXplZ0JkN293aHlaTXo5Vjc2Y0ZWSGZFZVhnT1J4VUdUMmNpZ21uTHBEYlFnSUhWblB2dGx0eDRWYmphcUNGXy1Cb09sa2dBQlJOenJCX3JVeU9vdU9QRk01TzJEZEo1cWJxMmNZb2E5M29fOUgwZkliSWVPM2xUcTh1TG16V3hWVFBDd1MzU19BRk1pWHczRU52VkRhOG81SG9iZw?oc=5"
+    },
+    {
+     "feed": "CBS News (via Google News)",
+     "title": "Lutnick agrees to testify as Bessent blames him for not banning Nvidia chip exports to China-linked firm",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZjdSSHkzMEg0b3Z5dnN3c0txSTN4d0FCcVVyT2x4Z2N4OC12RTFmQ296ZUYxNEFXaEo3ckhnM0NVMXA1Z1lkbTlqMVFydFpGNVUyM2wxX0ptOXZSS01Ob09YMVBIMjYyOHRHOFBNLWJnZjBUdzM1MDVEQURxVEpfd0dORWptNzFjMXJYbzhB?oc=5"
+    },
+    {
+     "feed": "Reuters (via Google News)",
+     "title": "Bessent blames Commerce Dept over lack of export controls for Nvidia partner Megaspeed",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLTRNS3BqaXcwNDJlOTNLZDU2NkdSbmtHUFFPNFJTRFBvdXVselAtVGkyU25RR3Q0Q1djS0N1TDM0VnpNRXNHWmxiVE15bVduU3BUMUlONURZUC1EbTNIa1FqX3liOHBiOUk2S0xKSDMtS0lnZjg3ajVZdTVtTnl3NC1vTWNDM0M4SEFKV3d4N3dieXdvaWhNdEtYc2pvdy0xcVI3VDBGQXM4N00?oc=5"
+    },
+    {
+     "feed": "Le Monde.fr (via Google News)",
+     "title": "US Treasury secretary blames the Department of Commerce for leak of Nvidia chips to China",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPQ1JJZWRfZ0I0WmVJUlowQzVZSm1HdHNvbjEzQVNyR1NNLUJ0cEw1WlJhM2JUdzlJNmtVb3NDdWRWbFMtLTc5OTM1Qm95Z253dXJXZVJsenUyLWEtU2VubHR1ZmdNWTM2Mmo2NVZ2OUEzQnQ3cVlmZVN4M0pfMzVsQUl1SjYzakR2cFY1ZlJOUlBMZzVzMXBuWTVhMzlIUlZwTjlyYVBWdnpZMHlTaGJBeTJrSGNuckIzOEVsRWJuUDdXVTNsazJiQUZ6NWNzWUYySFktOGtsenNuSXdLclBhNnZaWjZBVGRJeDFhS3h6WUYtY19f?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "c17945847551",
+   "at": "2026-11-13T15:45:55.668457+00:00",
+   "kind": "sources",
+   "title": "‘Broken and shattered’ Nvidia CEO Jensen Huang surrendered during resignation meeting, report claims",
+   "words": [
+    "2",
+    "board",
+    "broken",
+    "calling",
+    "ceo",
+    "claim",
+    "despite",
+    "during",
+    "employee",
+    "fallout",
+    "forum",
+    "huang",
+    "internal",
+    "investigating",
+    "investing",
+    "jensen",
+    "make",
+    "meeting",
+    "nvidia",
+    "panel",
+    "rally",
+    "reinstatement",
+    "resignation",
+    "say",
+    "shattered",
+    "sink",
+    "source",
+    "still",
+    "stock",
+    "surrendered",
+    "thousand"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "NBC News (via Google News)",
+    "Tom's Hardware"
+   ],
+   "articles": [
+    {
+     "feed": "Tom's Hardware",
+     "title": "‘Broken and shattered’ Nvidia CEO Jensen Huang surrendered during resignation meeting, report claims",
+     "link": "https://www.tomshardware.com/tech-industry/broken-and-shattered-nvidia-ceo-jensen-huang-surrendered-during-resignation-meeting-report-claims-thousands-of-employees-rally-calling-for-reinstatement-on-internal-forum"
+    },
+    {
+     "feed": "Tom's Hardware (via Google News)",
+     "title": "‘Broken and shattered’ Nvidia CEO Jensen Huang surrendered during resignation meeting, report claims — thousands of employees rally, calling for reinstatement on internal forum",
+     "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQWFplQnRsUWM0TXBmb0tLY1c2QmVpNUtpX29NZDAzUGEzT2owY1N3ZnVDWjJzdEMwT091ZkxNOVdGSWdDbjRwSENScnhrMmpVaGxncW5QWFZsbkpkaDhKVTBUa2IyNWJVMW9UUXhBelE4NmdWTy12T2FvMEY4TzZucGhqX0tmbmxhLUVTRTFQcERiSDhhUXZSRnd2SkpyQzRtWUwwVjd5dUdWQjFHMnE0MFBNTGhYSGlSeGJIX1BUTzRVYnRRSi1VNjE2Uks2SnhOaWVTdVdOODI2aGlDeG5USUxwdEpRMUljVzlPT0hSMmdVcXFDU0dKWnRUVUJ4RTVYVVBnNDgzYUl4cGNPTmRVdHRuckdaWWpaTkRaVGdIeWlLODN3eFlaTXAzU2J6YWVEOVdNRVhkMG0?oc=5"
+    },
+    {
+     "feed": "Yahoo Finance (via Google News)",
+     "title": "What to make of Jensen Huang's resignation: AI Investing Panel",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOVJ1Yms1bkNicXhsUExpem5wT2Fxdm1ESHByY2ttUGp1R2twNE8wQm93X3BJdnlLSU1wSDlYXzljTXRmczlfZFE0T2JSQ0dGWWlFM0d5ZTE2bDJscEpWV04teW5hNEY0b1lrU29sWDJxbm5PUnJfNDNjNVpJaUpRY3FZRWFQSDBCd2F0TmgtemFnZ2kxOG10OE9DNDB1TF9BVmlXMS1lc0RYVFE?oc=5"
+    },
+    {
+     "feed": "CNBC (Technology)",
+     "title": "Nvidia stock sinks 2% in fallout from Jensen Huang resignation",
+     "link": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html"
+    },
+    {
+     "feed": "NBC News (via Google News)",
+     "title": "Nvidia’s board is still investigating Jensen Huang despite his resignation, sources say",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOUVKdTBnQ3JZdzNiVXhaY3FZMmNIQ0hlNkNzamhaRVlXY0tPNFg2Mk5HZThiWTYxamJlLTh5dWl6WDFhcFlOOVRJNEVoVThsWmdPb0RYdTNBRFpOMUozZjY2aVhqUEFNMTNISnhjNm5xSzBYdWVVYlhRRjVhNW43NEFOdTdyLVQ2SVAzOUp5STJwb050TExSNzVpY2ZqX1NzOTFpTkRBMnZlTk9UaWczTWE3N24?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "c17945928590",
+   "at": "2026-11-13T18:00:59.029475+00:00",
+   "kind": "sources",
+   "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
+   "words": [
+    "around",
+    "boom",
+    "commerce",
+    "crisi",
+    "dampen",
+    "exuberance",
+    "fallout",
+    "grow",
+    "lutnick",
+    "nvidia",
+    "political",
+    "pressure",
+    "scandal",
+    "secretary",
+    "spy",
+    "trump",
+    "under",
+    "unfold",
+    "widen"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "Bloomberg (Technology)",
+    "France 24 (via Google News)"
+   ],
+   "articles": [
+    {
+     "feed": "BBC News (Technology)",
+     "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
+     "link": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "feed": "Bloomberg (Technology)",
+     "title": "Lutnick Under Pressure as Nvidia Crisis Unfolds",
+     "link": "https://www.bloomberg.com/news/videos/2026-11-13/lutnick-under-pressure-as-nvidia-crisis-unfolds-video"
+    },
+    {
+     "feed": "NBC Bay Area (via Google News)",
+     "title": "Fallout from the Nvidia scandal may dampen the exuberance around the AI boom",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaEFGWnJSY2E3ejVtMXpsM1Jvei1EWEswRU52RXpnb2NzNWxnMEFNNDRraXozZVk0WWVXeU9wYkVlc3ZkdVF3cXJTZXVtUUhCY0h6Q3VCUVROT0dwNHd0WktaNTdVallSeTVHUlNHVHdMQzljRmp0YmNsanloTHVNSlVRZ9IBiwFBVV95cUxQdUFQVmxrRGUtZ1BxeDllYmNQbTA5bW1GVkNxNXVCV3JXaHZjRWdLdGROM1hCRTBzZ3FMeVVDOGwwb3paSEZ5MEFmMVlObW1kM3A5UzhKOElNNWVDa05lVVJGMkR1M2hlbHRlQjZoX0swSkhVZW54Qlk5cWY4RnhMVGhjc1cwX1h5aGhV?oc=5"
+    },
+    {
+     "feed": "France 24 (via Google News)",
+     "title": "Political fallout widens in Nvidia spy scandal",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQVlKU3NEZ0ltRktUeHItRTdsWERCR2hDZ3l1ZmhpcE5tNjhWZGJBVEZrQUMyQ2hhWnNEdWhCbmFFbTlqSEJVU1V6dFlvQXRISnJyb0NrbnZuZUZiUnl2V2VqVDBQM1p1LWI3WnJtNW1RTzNxVVl3QkJRNzlaUmQ4cmtfLWJGaDR1M3Y3MmJNWURsbkdwdnpzUw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "c17946072560",
+   "at": "2026-11-13T22:00:56.367902+00:00",
+   "kind": "sources",
+   "title": "Trump bought Nvidia stock as he helped chipmaker with change to export rule",
+   "words": [
+    "401",
+    "ahead",
+    "bought",
+    "ceo",
+    "cerebra",
+    "change",
+    "chipmaker",
+    "deal",
+    "despite",
+    "drop",
+    "export",
+    "helped",
+    "hit",
+    "market",
+    "mean",
+    "microsoft",
+    "never",
+    "nvidia",
+    "push",
+    "rule",
+    "slide",
+    "still",
+    "stock",
+    "surge",
+    "trump",
+    "your"
+   ],
+   "outlets": [
+    "CBS News (via Google News)",
+    "The Guardian (via Google News)",
+    "The New York Times (via Google News)"
+   ],
+   "articles": [
+    {
+     "feed": "The Guardian (via Google News)",
+     "title": "Trump bought Nvidia stock as he helped chipmaker with change to export rule",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUjdQaTlJR1k0ZFc4N1pIVG5LRUJmZkFIemZ3U3g3ZWJXTk1ybnNIYjFacm5zUXhLaXpHMGxxOE40TU1BdDkxb09RZnNIV3ZNeU94bUlYakVEc1ItTHZaSWpkbHpBN1hHTkl0bEhwX1d3ckZQN190ZGZIZlJaV2g5U1VzQWlnNEZpWHctQnlvVThmUQ?oc=5"
+    },
+    {
+     "feed": "U.S. Bank (via Google News)",
+     "title": "What NVIDIA’s CEO change means for AI and the stock market",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaUdwdVZwN0FrX29iM0lyMnIyOVAwM0RpbFhvR21QWnE1cWZZb2lsbFNzNkdXTld5U0d5MW5ra1VvMlRneE1KQlFUaG9TU0E4WEZDMnZsaWg3bjZTQkdXU0lWX0ljSFJRTldSQUhjU0hlVnhLVFBQa1lKZ3JKRDZmSzZRbDZCcWJESFByaS04QQ?oc=5"
+    },
+    {
+     "feed": "WISN (via Google News)",
+     "title": "What Nvidia’s stock drop could mean for your 401(k)",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY2luWjZkMVNCbWZXSlJKeC1ab3FpTGJpQXcwQlo0cGZJVXVIbV80dUJTNjluNzRYcjl1aFE0MjNGMmdrQW5sWUxHVHQ4RjFTMG1pVXV6TWh1eDR4VTFjWmdpMEJQVTVkcDRTeHlxSzlkam1NMkZCY1hyUnVqSHZ3SVpsUjFHYU01YkRDLVNoZw?oc=5"
+    },
+    {
+     "feed": "The New York Times (via Google News)",
+     "title": "Despite Nvidia’s Drop, Stocks Push Ahead",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlBrdjRTd1hzdUVoVk5qRGEwY0hjenIxSGFLUnRCdUhrdkZJNlVJUkpFanRQR3R0ajJXeGFFWE5UcWtEYkpkRHQxTXhCY3BZMDZUbnF3OUd6WDdtN015NHV6NWpJZExzZnZsV0F0ZTRGSDJOYU12d2RuZWtDWG13dHN3?oc=5"
+    },
+    {
+     "feed": "Yahoo Finance (via Google News)",
+     "title": "Cerebras stock surges on Microsoft deal: What it means for Nvidia",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcGF1X29FYW9Vb0NmalZsbXJ5c3ZYNTQ1R1RlaU12TnRYM3pRbWd3Zm5Db3dzZTN4QUY0TjRGN2RjYWp3ZjZkTkw0ZXdkejB0dDhkVnIwS0FYcFdFSExoVG41TGRVdjE1aHB2R2lFSVEyYUtFTlBmZHNwVXhsNDQ1Tjlnbjc1T3NjakozVkJTMEVETTFIVEVUamF0OGViamY1cHAtR1RObmVVeUdEajJwcw?oc=5"
+    },
+    {
+     "feed": "CBS News (via Google News)",
+     "title": "Never bought Nvidia stock? Its slide could still hit your 401(k).",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1LMVB3Z0oxMi1ZbkczN2ZDYURLaXUyczRNOGNaUFdQWkFXRFN0bjctVU9fZGM2Yk50TTg1LTVzdjE1aFc4VXE3dHlPRGt5YU1RbjI3RmxBQ1IwcjFHS0JGYmhGN0F3R2pXeUVLNmNDbXpiWlU?oc=5"
+    }
+   ]
+  }
+ ],
+ "last_run": {
+  "at": "2026-11-14T15:45:54.203867+00:00",
+  "feeds": 106,
+  "failed": [
+   "European Parliament - IMCO Committee: ParseError",
+   "European Parliament - LIBE Committee: ParseError",
+   "European Parliament - ITRE Committee: ParseError"
+  ],
+  "items_24h": 619,
+  "ai_items_window": 169,
+  "candidates": 0,
+  "alarms": 0
+ },
+ "pending": [],
+ "near": [
+  {
+   "at": "2026-11-10T09:45:57.702842+00:00",
+   "title": "Nominal raises $240M at $3B valuation, tripling in eight months, to put AI inside hardware engineering",
+   "words": [
+    "240",
+    "3",
+    "driven",
+    "eight",
+    "engineering",
+    "hardware",
+    "inside",
+    "month",
+    "nominal",
+    "put",
+    "raise",
+    "tripling",
+    "valuation"
+   ],
+   "outlets": [
+    "Tech Funding News",
+    "Tech Monitor"
+   ]
+  },
+  {
+   "at": "2026-11-10T13:15:55.167440+00:00",
+   "title": "Dresden’s Sparxity hits $90M total funding as Lockheed Martin Ventures backs sparse AI chips",
+   "words": [
+    "90",
+    "back",
+    "chip",
+    "chipmaker",
+    "close",
+    "dresden",
+    "funding",
+    "hits",
+    "lockheed",
+    "martin",
+    "serie",
+    "sparse",
+    "sparxity",
+    "taking",
+    "total",
+    "venture"
+   ],
+   "outlets": [
+    "Tech Funding News",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T14:00:56.333451+00:00",
+   "title": "Anthropic heads for $1.3 trillion valuation in major stock market listing",
+   "words": [
+    "1",
+    "3",
+    "anthropic",
+    "become",
+    "company",
+    "head",
+    "listing",
+    "major",
+    "market",
+    "publicly",
+    "seek",
+    "stock",
+    "traded",
+    "trillion",
+    "valuation",
+    "when"
+   ],
+   "outlets": [
+    "ABC News (Technology)",
+    "BBC News (Technology)"
+   ]
+  },
+  {
+   "at": "2026-11-10T15:30:55.385172+00:00",
+   "title": "Adobe Firefly AI Assistant can now take on recurring tasks for you",
+   "words": [
+    "adobe",
+    "agent",
+    "assistant",
+    "firefly",
+    "model",
+    "pick",
+    "plan",
+    "recurring",
+    "take",
+    "task",
+    "work",
+    "you"
+   ],
+   "outlets": [
+    "Engadget",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T16:15:57.329883+00:00",
+   "title": "Google's Gemini 4 Carbon is now widely available around the world",
+   "words": [
+    "4",
+    "around",
+    "available",
+    "carbon",
+    "gemini",
+    "google",
+    "widely",
+    "world"
+   ],
+   "outlets": [
+    "Engadget",
+    "Google DeepMind"
+   ]
+  },
+  {
+   "at": "2026-11-10T16:45:56.511630+00:00",
+   "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+   "words": [
+    "adobe",
+    "agent",
+    "bring",
+    "creative",
+    "edit",
+    "file",
+    "firefly",
+    "let",
+    "outside",
+    "photoshop",
+    "premiere",
+    "tool"
+   ],
+   "outlets": [
+    "TechCrunch",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T17:15:57.591200+00:00",
+   "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+   "words": [
+    "2",
+    "5",
+    "96",
+    "asimov",
+    "assembly",
+    "benchmark",
+    "benz",
+    "deepmind",
+    "gemini",
+    "google",
+    "jailbreak",
+    "mercede",
+    "metal",
+    "open",
+    "part",
+    "percent",
+    "pilot",
+    "reveal",
+    "robotic",
+    "safety",
+    "score",
+    "sorting"
+   ],
+   "outlets": [
+    "Ars Technica",
+    "The Decoder"
+   ]
+  },
+  {
+   "at": "2026-11-10T17:45:55.246969+00:00",
+   "title": "Reddit launches AI-powered Reviews feature – with 10,000 products to start",
+   "words": [
+    "000",
+    "10",
+    "feature",
+    "launche",
+    "powered",
+    "product",
+    "reddit",
+    "review",
+    "say",
+    "start",
+    "summarise",
+    "user",
+    "uses"
+   ],
+   "outlets": [
+    "The Next Web",
+    "ZDNET (AI)"
+   ]
+  },
+  {
+   "at": "2026-11-10T17:45:55.246969+00:00",
+   "title": "AMD Tunes Up CPUs For Agentic AI With “Venice” Epyc Processors",
+   "words": [
+    "agentic",
+    "ago",
+    "amd",
+    "architect",
+    "arm",
+    "chief",
+    "claim",
+    "cpus",
+    "didn",
+    "epyc",
+    "four",
+    "going",
+    "know",
+    "made",
+    "magically",
+    "nvidia",
+    "processor",
+    "rebuke",
+    "thing",
+    "tune",
+    "venice",
+    "year",
+    "zen"
+   ],
+   "outlets": [
+    "The Next Platform",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-10T17:45:55.246969+00:00",
+   "title": "Anthropic takes on Google and Microsoft with Claude Sheets",
+   "words": [
+    "adds",
+    "anthropic",
+    "assistant",
+    "backer",
+    "call",
+    "claude",
+    "google",
+    "microsoft",
+    "sheet",
+    "take",
+    "taking"
+   ],
+   "outlets": [
+    "Engadget",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T18:00:56.478072+00:00",
+   "title": "Google turns Gemini towards medical paperwork",
+   "words": [
+    "cloud",
+    "gemini",
+    "google",
+    "healthcare",
+    "hospital",
+    "launche",
+    "medical",
+    "paperwork",
+    "take",
+    "toward",
+    "turn"
+   ],
+   "outlets": [
+    "Engadget",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T19:15:56.209471+00:00",
+   "title": "Nvidia board member Stephen Neal could play big role in probe of CEO Jensen Huang",
+   "words": [
+    "big",
+    "board",
+    "ceo",
+    "huang",
+    "independent",
+    "jensen",
+    "member",
+    "neal",
+    "nvidia",
+    "play",
+    "probe",
+    "role",
+    "statement",
+    "stephen"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "NVIDIA Newsroom"
+   ]
+  },
+  {
+   "at": "2026-11-10T19:30:55.653063+00:00",
+   "title": "Oura buys Counsel Health for $625m to put AI and doctors in its app",
+   "words": [
+    "625",
+    "acquire",
+    "app",
+    "buys",
+    "care",
+    "counsel",
+    "doctor",
+    "health",
+    "native",
+    "oura",
+    "primary",
+    "put",
+    "startup"
+   ],
+   "outlets": [
+    "TechCrunch",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-10T20:00:54.763599+00:00",
+   "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+   "words": [
+    "anthropic",
+    "claude",
+    "discussion",
+    "full",
+    "launche",
+    "meeting",
+    "note",
+    "plan",
+    "plugin",
+    "soon",
+    "spreadsheet",
+    "task",
+    "turn",
+    "whiteboard",
+    "workplace",
+    "workspace"
+   ],
+   "outlets": [
+    "TechCrunch",
+    "The Decoder"
+   ]
+  },
+  {
+   "at": "2026-11-10T20:15:55.646293+00:00",
+   "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
+   "words": [
+    "affair",
+    "firm",
+    "hire",
+    "huang",
+    "investigate",
+    "jensen",
+    "law",
+    "lead",
+    "lipton",
+    "major",
+    "nvidia",
+    "probe",
+    "wachtell",
+    "york"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "CNBC (Technology)"
+   ]
+  },
+  {
+   "at": "2026-11-11T09:30:56.965925+00:00",
+   "title": "Mercor doubles valuation to $20B with $750M Series D to train and test AI agents for enterprises",
+   "words": [
+    "20",
+    "750",
+    "agent",
+    "double",
+    "enterprise",
+    "evaluation",
+    "expand",
+    "mercor",
+    "raise",
+    "serie",
+    "test",
+    "tool",
+    "train",
+    "valuation"
+   ],
+   "outlets": [
+    "Tech Funding News",
+    "Tech Monitor"
+   ]
+  },
+  {
+   "at": "2026-11-11T17:00:55.915670+00:00",
+   "title": "Militärische KI-Plattform: Helsing stellt europäische Alternative zu Palantir vor",
+   "words": [
+    "alternative",
+    "clarity",
+    "europ",
+    "helsing",
+    "ische",
+    "milit",
+    "nchner",
+    "palantir",
+    "plattform",
+    "rische",
+    "stellt",
+    "stung",
+    "vor"
+   ],
+   "outlets": [
+    "Golem.de",
+    "heise online (KI)"
+   ]
+  },
+  {
+   "at": "2026-11-11T17:15:56.313523+00:00",
+   "title": "SpaceX develops its own ‘Kessel’ rack-scale system featuring 72 Nvidia Rubin GPUs for data centers in space, report claims",
+   "words": [
+    "400",
+    "72",
+    "center",
+    "claim",
+    "consortium",
+    "data",
+    "develop",
+    "featuring",
+    "gpus",
+    "hyperscale",
+    "kessel",
+    "nvidia",
+    "oman",
+    "own",
+    "rack",
+    "rubin",
+    "scale",
+    "space",
+    "spacex",
+    "system"
+   ],
+   "outlets": [
+    "Data Center Dynamics",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-12T05:15:55.591929+00:00",
+   "title": "Nebuly raises $21M from Planven to show enterprises what its AI agents are worth",
+   "words": [
+    "21",
+    "agent",
+    "enterprise",
+    "measure",
+    "nebuly",
+    "planven",
+    "raise",
+    "roi",
+    "serie",
+    "show",
+    "worth"
+   ],
+   "outlets": [
+    "Tech Funding News",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-12T09:45:55.322995+00:00",
+   "title": "UK AI chips start-up Fractile raises $720m at $7bn valuation",
+   "words": [
+    "7",
+    "720",
+    "chip",
+    "fractile",
+    "raise",
+    "start",
+    "valuation"
+   ],
+   "outlets": [
+    "Silicon Republic",
+    "Tech Monitor"
+   ]
+  },
+  {
+   "at": "2026-11-12T10:00:54.792569+00:00",
+   "title": "Jensen Huang’s fate hangs on Nvidia’s board after overnight meeting",
+   "words": [
+    "6",
+    "await",
+    "board",
+    "fall",
+    "fate",
+    "hang",
+    "huang",
+    "investor",
+    "jensen",
+    "meeting",
+    "nvidia",
+    "overnight",
+    "stock"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-12T14:15:55.842133+00:00",
+   "title": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
+   "words": [
+    "10",
+    "agreement",
+    "bring",
+    "center",
+    "chain",
+    "clean",
+    "data",
+    "demand",
+    "manufacturing",
+    "meta",
+    "outpace",
+    "power",
+    "supply"
+   ],
+   "outlets": [
+    "Meta Newsroom",
+    "TechRadar"
+   ]
+  },
+  {
+   "at": "2026-11-12T14:30:55.836493+00:00",
+   "title": "Huang powers and bankrolls AI revolution: Nvidia CEO caught between 'a rock and a very hard place'",
+   "words": [
+    "bankroll",
+    "before",
+    "between",
+    "caught",
+    "ceo",
+    "dramatic",
+    "hard",
+    "huang",
+    "nvidia",
+    "place",
+    "power",
+    "revolution",
+    "rock",
+    "star",
+    "unravelling",
+    "very"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "France 24 (English)"
+   ]
+  },
+  {
+   "at": "2026-11-12T16:00:57.715061+00:00",
+   "title": "Meet Colette Kress, Nvidia’s New Interim CEO",
+   "words": [
+    "ceo",
+    "colette",
+    "interim",
+    "kres",
+    "meet",
+    "nvidia",
+    "permanently",
+    "take"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "WIRED"
+   ]
+  },
+  {
+   "at": "2026-11-12T17:15:57.207418+00:00",
+   "title": "President Trump says Apple’s Tim Cook is the only man to replace Jensen Huang as Nvidia CEO",
+   "words": [
+    "apple",
+    "ceo",
+    "china",
+    "concern",
+    "cook",
+    "huang",
+    "jensen",
+    "man",
+    "nvidia",
+    "only",
+    "president",
+    "replace",
+    "robotic",
+    "tim",
+    "trump"
+   ],
+   "outlets": [
+    "The Robot Report",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-12T17:30:55.644071+00:00",
+   "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+   "words": [
+    "395",
+    "angle",
+    "debut",
+    "gemini",
+    "glasse",
+    "google",
+    "powered",
+    "preorder",
+    "privacy",
+    "pushe",
+    "samsung",
+    "smart",
+    "smartglasse",
+    "starting"
+   ],
+   "outlets": [
+    "Ars Technica",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-12T18:15:58.053970+00:00",
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "words": [
+    "4",
+    "gemini",
+    "gets",
+    "google",
+    "hydrogen",
+    "introducing",
+    "major",
+    "search",
+    "upgrade"
+   ],
+   "outlets": [
+    "Google AI blog",
+    "Google DeepMind"
+   ]
+  },
+  {
+   "at": "2026-11-12T19:30:57.198052+00:00",
+   "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+   "words": [
+    "agent",
+    "airline",
+    "block",
+    "booking",
+    "citing",
+    "customer",
+    "cyber",
+    "cybersecurity",
+    "flight",
+    "risk",
+    "threat",
+    "united",
+    "using"
+   ],
+   "outlets": [
+    "TechCrunch",
+    "The Record"
+   ]
+  },
+  {
+   "at": "2026-11-13T10:00:56.937160+00:00",
+   "title": "EU leaders meet in Dublin for the bloc’s first AI summit",
+   "words": [
+    "artificial",
+    "bloc",
+    "dublin",
+    "first",
+    "intelligence",
+    "leader",
+    "meet",
+    "set",
+    "summit"
+   ],
+   "outlets": [
+    "Silicon Republic",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-13T11:00:55.238130+00:00",
+   "title": "US Senate asks Huang, Lutnick to testify on Nvidia",
+   "words": [
+    "asks",
+    "before",
+    "ceo",
+    "commerce",
+    "congres",
+    "huang",
+    "lutnick",
+    "nvidia",
+    "secretary",
+    "senate",
+    "summoned",
+    "testify"
+   ],
+   "outlets": [
+    "DW (English)",
+    "Euronews Next"
+   ]
+  },
+  {
+   "at": "2026-11-13T11:15:55.382304+00:00",
+   "title": "Nvidia stock inches higher as investors continue to weigh Jensen Huang’s departure",
+   "words": [
+    "analyst",
+    "cause",
+    "claim",
+    "continue",
+    "departure",
+    "gpus",
+    "higher",
+    "huang",
+    "inche",
+    "investor",
+    "jensen",
+    "mass",
+    "nvidia",
+    "smuggling",
+    "stock",
+    "underlying",
+    "weigh"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-13T12:15:57.700322+00:00",
+   "title": "How Shanghai fund manager Kang Wei introduced his wife Alice Huang to Jensen and built $7.5 billion Nvidia AI GPU smuggling operation",
+   "words": [
+    "5",
+    "7",
+    "alice",
+    "billion",
+    "built",
+    "chinese",
+    "fund",
+    "gpu",
+    "huang",
+    "introduced",
+    "jensen",
+    "kang",
+    "manager",
+    "nvidia",
+    "operation",
+    "really",
+    "scandal",
+    "shanghai",
+    "smuggling",
+    "spy",
+    "wei",
+    "wife"
+   ],
+   "outlets": [
+    "France 24 (English)",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-13T12:30:55.660535+00:00",
+   "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
+   "words": [
+    "action",
+    "alleged",
+    "house",
+    "howard",
+    "lack",
+    "lutnick",
+    "nvidia",
+    "pressure",
+    "putting",
+    "scandal",
+    "sex",
+    "under",
+    "white"
+   ],
+   "outlets": [
+    "BBC News (Technology)",
+    "The Guardian (AI)"
+   ]
+  },
+  {
+   "at": "2026-11-13T14:45:58.060119+00:00",
+   "title": "‘Broken and shattered’ Nvidia CEO Jensen Huang surrendered during resignation meeting, report claims",
+   "words": [
+    "broken",
+    "ceo",
+    "claim",
+    "during",
+    "huang",
+    "jensen",
+    "meeting",
+    "nvidia",
+    "off",
+    "recover",
+    "resignation",
+    "sell",
+    "shattered",
+    "stock",
+    "surrendered",
+    "trie"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "Tom's Hardware"
+   ]
+  },
+  {
+   "at": "2026-11-13T15:00:55.308198+00:00",
+   "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+   "words": [
+    "additional",
+    "ahead",
+    "backed",
+    "ceo",
+    "depart",
+    "financing",
+    "huang",
+    "ipo",
+    "jensen",
+    "need",
+    "nscale",
+    "nvidia",
+    "planned"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T15:00:55.308198+00:00",
+   "title": "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
+   "words": [
+    "aide",
+    "any",
+    "bessent",
+    "blame",
+    "china",
+    "chip",
+    "commerce",
+    "customer",
+    "deepseek",
+    "export",
+    "focu",
+    "leakage",
+    "lot",
+    "lutnick",
+    "megaspeed",
+    "nvidia",
+    "puts",
+    "restricting",
+    "secretary",
+    "secy",
+    "slam",
+    "spy",
+    "system",
+    "through",
+    "treasury",
+    "trump",
+    "went"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "The Washington Post (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T15:36:44.652041+00:00",
+   "title": "The Jensen Huang controversy overshadowed a major open source announcement at Nvidia",
+   "words": [
+    "announcement",
+    "board",
+    "controversy",
+    "despite",
+    "huang",
+    "investigating",
+    "jensen",
+    "major",
+    "nvidia",
+    "open",
+    "overshadowed",
+    "resignation",
+    "say",
+    "source",
+    "still"
+   ],
+   "outlets": [
+    "ITPro",
+    "NBC News (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T15:36:44.652041+00:00",
+   "title": "Bessent points finger at Commerce Department in Nvidia scandal as Trump advisers discuss possible Lutnick ouster",
+   "words": [
+    "adviser",
+    "bessent",
+    "bus",
+    "center",
+    "commerce",
+    "cracking",
+    "department",
+    "discus",
+    "down",
+    "fault",
+    "finger",
+    "firm",
+    "grow",
+    "lutnick",
+    "nvidia",
+    "ouster",
+    "point",
+    "possible",
+    "publicly",
+    "scandal",
+    "throw",
+    "trump",
+    "under"
+   ],
+   "outlets": [
+    "CNN (via Google News)",
+    "Politico (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T16:00:57.145611+00:00",
+   "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
+   "words": [
+    "agent",
+    "allowing",
+    "chatgpt",
+    "dot",
+    "dots",
+    "enabling",
+    "launche",
+    "letting",
+    "make",
+    "openai",
+    "pay",
+    "purchase",
+    "user",
+    "wallet"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "Reuters (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T16:00:57.145611+00:00",
+   "title": "OpenAI is launching a payment wallet to let its AI agents shop for users",
+   "words": [
+    "agent",
+    "card",
+    "chatgpt",
+    "check",
+    "launching",
+    "let",
+    "lets",
+    "openai",
+    "out",
+    "payment",
+    "seeing",
+    "shop",
+    "user",
+    "wallet",
+    "without",
+    "you",
+    "your"
+   ],
+   "outlets": [
+    "TechCrunch",
+    "The Next Web"
+   ]
+  },
+  {
+   "at": "2026-11-13T16:45:55.092123+00:00",
+   "title": "Samsung Is in Talks to Acquire Data Center Cooling Firm Modine",
+   "words": [
+    "acquire",
+    "center",
+    "company",
+    "cooling",
+    "data",
+    "firm",
+    "heated",
+    "hvac",
+    "manufacturing",
+    "modine",
+    "race",
+    "samsung",
+    "system",
+    "talk"
+   ],
+   "outlets": [
+    "Bloomberg.com (via Google News)",
+    "Data Center Dynamics"
+   ]
+  },
+  {
+   "at": "2026-11-13T17:15:55.880048+00:00",
+   "title": "Why Anthropic’s Dario Amodei Has Angered OpenAI and Other A.I. Peers",
+   "words": [
+    "alway",
+    "amodei",
+    "angered",
+    "anthropic",
+    "dario",
+    "openai",
+    "opinion",
+    "other",
+    "peer",
+    "way"
+   ],
+   "outlets": [
+    "Golem.de",
+    "The New York Times (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T17:30:55.788169+00:00",
+   "title": "U.S. Stocks Fall as Nvidia Shares Drop Again",
+   "words": [
+    "again",
+    "ahead",
+    "despite",
+    "drop",
+    "fall",
+    "nvidia",
+    "push",
+    "share",
+    "stock"
+   ],
+   "outlets": [
+    "The New York Times (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T17:30:55.788169+00:00",
+   "title": "EU leaders urged to 'act now' to stay AI competitive",
+   "words": [
+    "act",
+    "china",
+    "competitive",
+    "leader",
+    "race",
+    "stay",
+    "told",
+    "urged"
+   ],
+   "outlets": [
+    "DW.com (via Google News)",
+    "South China Morning Post (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T18:00:59.029475+00:00",
+   "title": "Arm boss Rene Haas approached in Nvidia CEO search",
+   "words": [
+    "approached",
+    "arm",
+    "boss",
+    "ceo",
+    "haas",
+    "huang",
+    "nvidia",
+    "puts",
+    "rene",
+    "search",
+    "share",
+    "slide",
+    "spotlight",
+    "succeed",
+    "succession"
+   ],
+   "outlets": [
+    "Financial Times (via Google News)",
+    "Reuters (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T20:00:55.722643+00:00",
+   "title": "As EU grapples with fierce AI competition, summit overshadowed by elusive Ukraine-Russia peace deal",
+   "words": [
+    "competition",
+    "deal",
+    "dublin",
+    "elusive",
+    "fierce",
+    "focused",
+    "grapple",
+    "overshadow",
+    "overshadowed",
+    "peace",
+    "russia",
+    "summit",
+    "talk",
+    "ukraine"
+   ],
+   "outlets": [
+    "France 24 (English)",
+    "POLITICO Europe (Technology)"
+   ]
+  },
+  {
+   "at": "2026-11-13T20:30:55.335389+00:00",
+   "title": "Anthropic CEO Dario Amodei aims to 'underpromise and overdeliver' as IPO valuation drops below $2T hopes",
+   "words": [
+    "2",
+    "aims",
+    "amodei",
+    "anthropic",
+    "below",
+    "ceo",
+    "chief",
+    "compute",
+    "dario",
+    "dimon",
+    "drop",
+    "fussed",
+    "hope",
+    "huge",
+    "ipo",
+    "jamie",
+    "market",
+    "overdeliver",
+    "pitche",
+    "super",
+    "tell",
+    "turmoil",
+    "uncertainty",
+    "underpromise",
+    "valuation"
+   ],
+   "outlets": [
+    "Financial Times (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T21:00:58.152323+00:00",
+   "title": "Banks bar Chinese and Hong Kong investors from Anthropic IPO over US export controls",
+   "words": [
+    "anthropic",
+    "bank",
+    "bar",
+    "chinese",
+    "control",
+    "export",
+    "get",
+    "hong",
+    "investor",
+    "ipo",
+    "kong",
+    "ready",
+    "retail",
+    "watch"
+   ],
+   "outlets": [
+    "Bloomberg.com (via Google News)",
+    "The Decoder"
+   ]
+  },
+  {
+   "at": "2026-11-13T21:30:55.740860+00:00",
+   "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+   "words": [
+    "biggest",
+    "fed",
+    "financial",
+    "find",
+    "latest",
+    "risk",
+    "rocket",
+    "survey",
+    "system",
+    "threat",
+    "top",
+    "worrie"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "Reuters (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-13T21:45:55.334086+00:00",
+   "title": "Nvidia closes below $4T market cap for first time since July 2025 in Huang fallout",
+   "words": [
+    "2025",
+    "4",
+    "absorb",
+    "below",
+    "cap",
+    "close",
+    "exit",
+    "eyes",
+    "fallout",
+    "first",
+    "friday",
+    "huang",
+    "jensen",
+    "july",
+    "lower",
+    "market",
+    "nvidia",
+    "selloff",
+    "since",
+    "stock",
+    "tariff",
+    "time",
+    "trump",
+    "week",
+    "worst"
+   ],
+   "outlets": [
+    "Bloomberg.com (via Google News)",
+    "CNBC (Technology)"
+   ]
+  },
+  {
+   "at": "2026-11-13T23:30:56.590867+00:00",
+   "title": "Market Rally Hard To Handle; Nvidia Earnings, Anthropic IPO Ahead",
+   "words": [
+    "ahead",
+    "anthropic",
+    "deciphering",
+    "earning",
+    "gets",
+    "handle",
+    "hard",
+    "ipo",
+    "market",
+    "noise",
+    "nvidia",
+    "pose",
+    "rally",
+    "result",
+    "retirement",
+    "test",
+    "trade",
+    "tumultuou",
+    "wall",
+    "watch",
+    "week"
+   ],
+   "outlets": [
+    "Bloomberg (via Google News)",
+    "Reuters (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-14T00:15:55.027193+00:00",
+   "title": "Can Jensen Huang's departure help Nvidia's competitors catch up?",
+   "words": [
+    "big",
+    "blast",
+    "catch",
+    "competitor",
+    "complex",
+    "departure",
+    "does",
+    "founder",
+    "funding",
+    "help",
+    "hole",
+    "huang",
+    "jensen",
+    "mean",
+    "nvidia",
+    "osu",
+    "research",
+    "say",
+    "startup",
+    "vcs"
+   ],
+   "outlets": [
+    "NPR (via Google News)",
+    "TechCrunch"
+   ]
+  },
+  {
+   "at": "2026-11-14T01:48:14.897022+00:00",
+   "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
+   "words": [
+    "chipmaker",
+    "deep",
+    "face",
+    "firm",
+    "lutnick",
+    "mean",
+    "nvidia",
+    "prompt",
+    "question",
+    "scandal",
+    "sons",
+    "spy",
+    "ties"
+   ],
+   "outlets": [
+    "CNBC (Technology)",
+    "The New York Times (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-14T01:48:14.897022+00:00",
+   "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
+   "words": [
+    "china",
+    "doesn",
+    "donald",
+    "during",
+    "issue",
+    "jinping",
+    "nvidia",
+    "official",
+    "plan",
+    "raise",
+    "say",
+    "spy",
+    "summit",
+    "trip",
+    "trump"
+   ],
+   "outlets": [
+    "CNBC (via Google News)",
+    "Financial Times (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-14T11:16:02.399454+00:00",
+   "title": "Jensen Huang resigns as CEO of Nvidia",
+   "words": [
+    "12",
+    "ceo",
+    "fall",
+    "global",
+    "huang",
+    "jensen",
+    "news",
+    "next",
+    "nov",
+    "nvidia",
+    "resign",
+    "search",
+    "share",
+    "start"
+   ],
+   "outlets": [
+    "NBC News (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-14T11:16:02.399454+00:00",
+   "title": "Nvidia Co-Founder Jensen Huang’s Downfall Is a Sign of Silicon Valley’s Power Drain",
+   "words": [
+    "downfall",
+    "drain",
+    "exposed",
+    "founder",
+    "huang",
+    "jensen",
+    "lawsuit",
+    "nvidia",
+    "possible",
+    "power",
+    "sign",
+    "silicon",
+    "valley"
+   ],
+   "outlets": [
+    "Financial Times (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  },
+  {
+   "at": "2026-11-14T13:00:57.572440+00:00",
+   "title": "Jensen Huang's Nvidia Resignation Sends a Warning to Investors Counting on AI for Retirement",
+   "words": [
+    "asset",
+    "before",
+    "best",
+    "boom",
+    "called",
+    "counting",
+    "creation",
+    "despite",
+    "future",
+    "him",
+    "huang",
+    "imagine",
+    "investor",
+    "jensen",
+    "must",
+    "nvidia",
+    "quiet",
+    "resignation",
+    "retirement",
+    "send",
+    "spy",
+    "stay",
+    "trump",
+    "urge",
+    "warning",
+    "without"
+   ],
+   "outlets": [
+    "The Washington Post (via Google News)",
+    "WSJ (via Google News)"
+   ]
+  }
+ ]
+}
