@@ -1,13 +1,17 @@
 name: Post judged alarms
 
-# The Haiku judge (a Claude routine) pushes its verdicts to the "verdicts" branch; this posts the
-# candidates it called important.
+# The Haiku judge pushes one file per verdict to the "verdicts" branch. GitHub runs this workflow from
+# that branch's copy, so it only checks out main and runs post.sh there: change post.sh, not this file.
 on:
   push:
     branches: [verdicts]
 
 permissions:
   contents: read
+
+concurrency:
+  group: post
+  cancel-in-progress: false
 
 jobs:
   post:
@@ -24,8 +28,6 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL }}
-        run: |
-          git fetch -q origin state verdicts
-          git show origin/state:state.json > state.json
-          git show origin/verdicts:verdicts.json > verdicts.json
-          python post_verdicts.py state.json verdicts.json | tee -a "$GITHUB_STEP_SUMMARY"
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
+        run: bash post.sh | tee -a "$GITHUB_STEP_SUMMARY"
