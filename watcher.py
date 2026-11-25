@@ -24,6 +24,7 @@ import email.utils
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -53,7 +54,7 @@ RULE_WORDS = re.compile(
 STRICT_AI = re.compile(AI_TERMS.pattern.replace(r"\bagents?\b|", ""), re.IGNORECASE)
 # Outlets that count when they come through Google News (the wires and major newsrooms); any other
 # outlet there is read but does not count.
-GNEWS_OUTLETS = set("""reuters.com apnews.com bloomberg.com ft.com wsj.com nytimes.com washingtonpost.com economist.com
+GNEWS_OUTLETS = set("""reuters.com ap.org bloomberg.com ft.com wsj.com nytimes.com washingtonpost.com economist.com
     politico.com politico.eu axios.com semafor.com theinformation.com cnbc.com cnn.com nbcnews.com cbsnews.com npr.org
     bbc.co.uk bbc.com theguardian.com theverge.com techcrunch.com wired.com arstechnica.com euractiv.com euronews.com
     dw.com france24.com lemonde.fr handelsblatt.com spiegel.de faz.net sueddeutsche.de heise.de nikkei.com scmp.com
@@ -149,7 +150,33 @@ def read_feed(feed: dict) -> list[dict]:
     return items
 
 
-def read_all(feeds: list[dict]) -> tuple[list[dict], list[str]]:
+def read_all(feeds: list[dict], cache: dict | None = None) -> tuple[list[dict], list[str]]:
+    """All feeds; the Google News searches go last, one at a time. Google rate-limits (HTTP 429): after
+    the first refusal the rest wait, and each search's last good items (cache, kept in the state) stand in."""
+    cache = {} if cache is None else cache
+    gnews = [f for f in feeds if f.get("kind") == "gnews"]
+    items, failed = read_plain([f for f in feeds if f.get("kind") != "gnews"])
+    limited = False
+    for n, feed in enumerate(gnews):
+        got = None
+        if not limited:
+            if n:
+                time.sleep(3)
+            try:
+                got = read_feed(feed)
+                cache[feed["id"]] = [{**x, "published": x["published"].isoformat()} for x in got]
+            except urllib.error.HTTPError as error:
+                limited = error.code == 429
+                failed.append(f"{feed['name']}: HTTP {error.code}")
+            except Exception as error:
+                failed.append(f"{feed['name']}: {type(error).__name__}")
+        if got is None:  # the last good copy
+            got = [{**x, "published": datetime.fromisoformat(x["published"])} for x in cache.get(feed["id"], [])]
+        items.extend(got)
+    return items, failed
+
+
+def read_plain(feeds: list[dict]) -> tuple[list[dict], list[str]]:
     items, failed = [], []
 
     def one(feed):
@@ -181,6 +208,21 @@ def clusters(items: list[dict], df: dict[str, int], rare: float) -> list[list[di
                 break
         else:
             groups.append(([item], set(bag)))
+    # Headlines of one story worded differently can start separate groups; merge them.
+    merged = True
+    while merged:
+        merged = False
+        for i in range(len(groups)):
+            for j in range(i + 1, len(groups)):
+                a, b = groups[i][1], groups[j][1]
+                shared = a & b
+                if len(shared) >= 3 and len(shared) >= .4 * min(len(a), len(b)) and any(df.get(w, 0) <= rare for w in shared):
+                    groups[i] = (groups[i][0] + groups[j][0], a | b)
+                    del groups[j]
+                    merged = True
+                    break
+            if merged:
+                break
     return [m for m, _ in groups]
 
 
@@ -189,12 +231,18 @@ def same_story(a: set[str], b: set[str]) -> bool:
     return len(shared) >= 3 and len(shared) >= .4 * min(len(a), len(b))
 
 
+SITE_ALIASES = {"bbc.com": "bbc.co.uk", "apnews.com": "ap.org", "nyti.ms": "nytimes.com", "on.ft.com": "ft.com"}
+
+
 def site(link: str) -> str:
-    """The website a link belongs to: blogs.nvidia.com and nvidianews.nvidia.com are both nvidia.com."""
+    """The website a link belongs to: blogs.nvidia.com and nvidianews.nvidia.com are both nvidia.com,
+    bbc.com and bbc.co.uk are both the BBC."""
     parts = (urllib.parse.urlsplit(link).hostname or "").lower().removeprefix("www.").split(".")
     if len(parts) >= 3 and parts[-2] in ("co", "com", "org", "gov", "ac", "net") and len(parts[-1]) == 2:
-        return ".".join(parts[-3:])
-    return ".".join(parts[-2:])
+        name = ".".join(parts[-3:])
+    else:
+        name = ".".join(parts[-2:])
+    return SITE_ALIASES.get(name, name)
 
 
 def outlets_of(members: list[dict]) -> dict[str, str]:
@@ -244,17 +292,21 @@ def main() -> None:
     state["alarms"] = [a for a in state.get("alarms", []) if datetime.fromisoformat(a["at"]) > week]
     state["near"] = [a for a in state.get("near", []) if datetime.fromisoformat(a["at"]) > week]
 
-    items, failed = read_all(feeds)
+    cache = state.setdefault("gnews_cache", {})
+    items, failed = read_all(feeds, cache)
+    for key in cache:  # older than six hours is no help
+        cache[key] = [x for x in cache[key] if datetime.fromisoformat(x["published"]) > now - timedelta(hours=6)]
     # The Google News searches overlap: keep one copy of each outlet's headline.
     seen: set[tuple[str, str]] = set()
     items = [x for x in items if not ((x.get("site") or x["link"]), x["title"].lower()) in seen
              and not seen.add(((x.get("site") or x["link"]), x["title"].lower()))]
     day = [x for x in items if x["published"] > now - timedelta(hours=24)]
+    before = [x for x in day if x["published"] <= now - timedelta(minutes=args.window)]
     df: dict[str, int] = {}
-    for x in day:
+    for x in before:
         for w in words_of(x["title"]):
             df[w] = df.get(w, 0) + 1
-    rare = max(5, .01 * len(day))
+    rare = max(5, .01 * len(before))
     recent = [x for x in day if x["published"] > now - timedelta(minutes=args.window) and x["published"] <= now + timedelta(minutes=5)]
     recent_ai = [x for x in recent if AI_TERMS.search(x["title"])]
 

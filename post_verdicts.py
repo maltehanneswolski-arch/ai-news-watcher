@@ -14,8 +14,17 @@ from watcher import esc, post
 def main() -> None:
     state = json.load(open(sys.argv[1], encoding="utf-8"))
     cands = {c["id"]: c for c in state.get("alarms", []) + state.get("pending", [])}
+    verdicts = []
     for path in sys.argv[2:]:
-        v = json.load(open(path, encoding="utf-8"))
+        try:
+            got = json.load(open(path, encoding="utf-8"))
+        except ValueError as error:
+            print("unreadable:", path, error)
+            continue
+        verdicts += [x for x in (got if isinstance(got, list) else [got]) if isinstance(x, dict)]
+    for v in verdicts:
+        if not v.get("summary") and v.get("line"):
+            v["summary"] = v["line"]
         cand = cands.get(v.get("id"))
         if not cand or v.get("important") is not True:
             print("not posted:", v.get("id"), (cand or {}).get("title", "")[:90])
